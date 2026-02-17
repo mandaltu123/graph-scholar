@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "page_num": 1,
+      "text": "LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 1 sample content for testing.",
+      "blocks": []
+    },
+    {
+      "page_num": 2,
+      "text": "LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 2 sample content for testing.",
+      "blocks": []
+    },
+    {
+      "page_num": 3,
+      "text": "LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 3 sample content for testing.",
+      "blocks": []
+    }
+  ],
+  "full_text": "LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 1 sample content for testing.\n\nLandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 2 sample content for testing.\n\nLandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.\nSeed: eddf096a\nPage 3 sample content for testing."
+}

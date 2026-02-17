@@ -1,0 +1,11 @@
+LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.
+Seed: e15c9c1f
+Page 1 sample content for testing.
+
+LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.
+Seed: e15c9c1f
+Page 2 sample content for testing.
+
+LandingAI mock OCR output. Set LANDINGAI_MOCK=false for real OCR.
+Seed: e15c9c1f
+Page 3 sample content for testing.

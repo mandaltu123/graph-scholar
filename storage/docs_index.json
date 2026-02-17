@@ -1,0 +1,112 @@
+{
+  "8f41bcf5-aeeb-4ab4-8712-ab935b1d06eb": {
+    "doc_id": "8f41bcf5-aeeb-4ab4-8712-ab935b1d06eb",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T03:23:50.245210",
+    "updated_at": "2026-02-17T03:23:54.457185",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "a28ba831-6ca1-43da-8a98-56bbb32729d1": {
+    "doc_id": "a28ba831-6ca1-43da-8a98-56bbb32729d1",
+    "filename": "Agentic_AI_Autonomous_Intelligence_for_Complex_Goa.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T03:36:32.391757",
+    "updated_at": "2026-02-17T03:36:35.924683",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "60fa23a6-d4ba-412c-ad60-594421ef1f5c": {
+    "doc_id": "60fa23a6-d4ba-412c-ad60-594421ef1f5c",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T04:23:55.090131",
+    "updated_at": "2026-02-17T04:23:58.444322",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "1ffb6234-37c8-48f6-8afc-98974d56bd51": {
+    "doc_id": "1ffb6234-37c8-48f6-8afc-98974d56bd51",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T05:56:25.425658",
+    "updated_at": "2026-02-17T05:56:25.485163",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "8023e70a-ea11-4722-98a2-c9b9bcba42fa": {
+    "doc_id": "8023e70a-ea11-4722-98a2-c9b9bcba42fa",
+    "filename": "Agentic_AI_Autonomous_Intelligence_for_Complex_Goa.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T06:00:52.396465",
+    "updated_at": "2026-02-17T06:00:55.753774",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "85722c11-438f-4506-82f4-966c00208522": {
+    "doc_id": "85722c11-438f-4506-82f4-966c00208522",
+    "filename": "Agentic_AI_Autonomous_Intelligence_for_Complex_Goa.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T06:08:52.092638",
+    "updated_at": "2026-02-17T06:08:55.557228",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "0d6dfb1d-7d8c-4c1f-ac7e-4643d40f77c5": {
+    "doc_id": "0d6dfb1d-7d8c-4c1f-ac7e-4643d40f77c5",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T06:11:26.860937",
+    "updated_at": "2026-02-17T06:11:30.492074",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "a70d21cb-9031-4841-bdeb-5c19152bf71a": {
+    "doc_id": "a70d21cb-9031-4841-bdeb-5c19152bf71a",
+    "filename": "apple_financial_statement.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T06:18:40.141110",
+    "updated_at": "2026-02-17T06:18:43.990002",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "92c51cf8-dae6-487d-9c6c-7aa6ab1dc598": {
+    "doc_id": "92c51cf8-dae6-487d-9c6c-7aa6ab1dc598",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T06:28:13.745157",
+    "updated_at": "2026-02-17T06:28:17.215644",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  },
+  "c0c919e9-0cb7-418c-bc78-8ae130442dfe": {
+    "doc_id": "c0c919e9-0cb7-418c-bc78-8ae130442dfe",
+    "filename": "20250423-EB-Event-Driven_Design_for_Agents.pdf",
+    "status": "Ready",
+    "chunk_count": 3,
+    "embedded": true,
+    "created_at": "2026-02-17T09:29:06.878681",
+    "updated_at": "2026-02-17T09:29:07.199691",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "error": null
+  }
+}

@@ -1,0 +1,151 @@
+1c52cb08-a95e-456a-b91d-7bbdcb0589af
+Apple Inc.
+90925f4b-11c2-4e85-96d3-1b9b8f36d133
+CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS (Unaudited)
+(In millions, except number of shares, which are reflected in thousands, and per-share amounts)
+<table id="0-1">
+<tr><td id="0-2"></td><td id="0-3" colspan="2">Three Months Ended</td><td id="0-4" colspan="2">Six Months Ended</td></tr>
+<tr><td id="0-5"></td><td id="0-6">March 29, 2025</td><td id="0-7">March 30, 2024</td><td id="0-8">March 29, 2025</td><td id="0-9">March 30, 2024</td></tr>
+<tr><td id="0-a" colspan="5">Net sales:</td></tr>
+<tr><td id="0-b">Products</td><td id="0-c">$ 68,714</td><td id="0-d">$ 66,886</td><td id="0-e">$ 166,674</td><td id="0-f">$ 163,344</td></tr>
+<tr><td id="0-g">Services</td><td id="0-h">26,645</td><td id="0-i">23,867</td><td id="0-j">52,985</td><td id="0-k">46,984</td></tr>
+<tr><td id="0-l">Total net sales (1)</td><td id="0-m">95,359</td><td id="0-n">90,753</td><td id="0-o">219,659</td><td id="0-p">210,328</td></tr>
+<tr><td id="0-q" colspan="5">Cost of sales:</td></tr>
+<tr><td id="0-r">Products</td><td id="0-s">44,030</td><td id="0-t">42,424</td><td id="0-u">103,477</td><td id="0-v">100,864</td></tr>
+<tr><td id="0-w">Services</td><td id="0-x">6,462</td><td id="0-y">6,058</td><td id="0-z">13,040</td><td id="0-A">12,338</td></tr>
+<tr><td id="0-B">Total cost of sales</td><td id="0-C">50,492</td><td id="0-D">48,482</td><td id="0-E">116,517</td><td id="0-F">113,202</td></tr>
+<tr><td id="0-G">Gross margin</td><td id="0-H">44,867</td><td id="0-I">42,271</td><td id="0-J">103,142</td><td id="0-K">97,126</td></tr>
+<tr><td id="0-L"></td><td id="0-M"></td><td id="0-N"></td><td id="0-O"></td><td id="0-P"></td></tr>
+<tr><td id="0-Q" colspan="5">Operating expenses:</td></tr>
+<tr><td id="0-R">Research and development</td><td id="0-S">8,550</td><td id="0-T">7,903</td><td id="0-U">16,818</td><td id="0-V">15,599</td></tr>
+<tr><td id="0-W">Selling, general and administrative</td><td id="0-X">6,728</td><td id="0-Y">6,468</td><td id="0-Z">13,903</td><td id="0-10">13,254</td></tr>
+<tr><td id="0-11">Total operating expenses</td><td id="0-12">15,278</td><td id="0-13">14,371</td><td id="0-14">30,721</td><td id="0-15">28,853</td></tr>
+<tr><td id="0-16"></td><td id="0-17"></td><td id="0-18"></td><td id="0-19"></td><td id="0-1a"></td></tr>
+<tr><td id="0-1b">Operating income</td><td id="0-1c">29,589</td><td id="0-1d">27,900</td><td id="0-1e">72,421</td><td id="0-1f">68,273</td></tr>
+<tr><td id="0-1g">Other income/(expense), net</td><td id="0-1h">(279)</td><td id="0-1i">158</td><td id="0-1j">(527)</td><td id="0-1k">108</td></tr>
+<tr><td id="0-1l">Income before provision for income taxes</td><td id="0-1m">29,310</td><td id="0-1n">28,058</td><td id="0-1o">71,894</td><td id="0-1p">68,381</td></tr>
+<tr><td id="0-1q">Provision for income taxes</td><td id="0-1r">4,530</td><td id="0-1s">4,422</td><td id="0-1t">10,784</td><td id="0-1u">10,829</td></tr>
+<tr><td id="0-1v">Net income</td><td id="0-1w">$ 24,780</td><td id="0-1x">$ 23,636</td><td id="0-1y">$ 61,110</td><td id="0-1z">$ 57,552</td></tr>
+<tr><td id="0-1A"></td><td id="0-1B"></td><td id="0-1C"></td><td id="0-1D"></td><td id="0-1E"></td></tr>
+<tr><td id="0-1F" colspan="5">Earnings per share:</td></tr>
+<tr><td id="0-1G">Basic</td><td id="0-1H">$ 1.65</td><td id="0-1I">$ 1.53</td><td id="0-1J">$ 4.06</td><td id="0-1K">$ 3.72</td></tr>
+<tr><td id="0-1L">Diluted</td><td id="0-1M">$ 1.65</td><td id="0-1N">$ 1.53</td><td id="0-1O">$ 4.05</td><td id="0-1P">$ 3.71</td></tr>
+<tr><td id="0-1Q" colspan="5">Shares used in computing earnings per share:</td></tr>
+<tr><td id="0-1R">Basic</td><td id="0-1S">14,994,082</td><td id="0-1T">15,405,856</td><td id="0-1U">15,037,903</td><td id="0-1V">15,457,810</td></tr>
+<tr><td id="0-1W">Diluted</td><td id="0-1X">15,056,133</td><td id="0-1Y">15,464,709</td><td id="0-1Z">15,103,499</td><td id="0-20">15,520,675</td></tr>
+<tr><td id="0-21"></td><td id="0-22"></td><td id="0-23"></td><td id="0-24"></td><td id="0-25"></td></tr>
+<tr><td id="0-26" colspan="5">(1) Net sales by reportable segment:</td></tr>
+<tr><td id="0-27">Americas</td><td id="0-28">$ 40,315</td><td id="0-29">$ 37,273</td><td id="0-2a">$ 92,963</td><td id="0-2b">$ 87,703</td></tr>
+<tr><td id="0-2c">Europe</td><td id="0-2d">24,454</td><td id="0-2e">24,123</td><td id="0-2f">58,315</td><td id="0-2g">54,520</td></tr>
+<tr><td id="0-2h">Greater China</td><td id="0-2i">16,002</td><td id="0-2j">16,372</td><td id="0-2k">34,515</td><td id="0-2l">37,191</td></tr>
+<tr><td id="0-2m">Japan</td><td id="0-2n">7,298</td><td id="0-2o">6,262</td><td id="0-2p">16,285</td><td id="0-2q">14,029</td></tr>
+<tr><td id="0-2r">Rest of Asia Pacific</td><td id="0-2s">7,290</td><td id="0-2t">6,723</td><td id="0-2u">17,581</td><td id="0-2v">16,885</td></tr>
+<tr><td id="0-2w">Total net sales</td><td id="0-2x">$ 95,359</td><td id="0-2y">$ 90,753</td><td id="0-2z">$ 219,659</td><td id="0-2A">$ 210,328</td></tr>
+<tr><td id="0-2B"></td><td id="0-2C"></td><td id="0-2D"></td><td id="0-2E"></td><td id="0-2F"></td></tr>
+<tr><td id="0-2G" colspan="5">(1) Net sales by category:</td></tr>
+<tr><td id="0-2H">iPhone</td><td id="0-2I">$ 46,841</td><td id="0-2J">$ 45,963</td><td id="0-2K">$ 115,979</td><td id="0-2L">$ 115,665</td></tr>
+<tr><td id="0-2M">Mac</td><td id="0-2N">7,949</td><td id="0-2O">7,451</td><td id="0-2P">16,936</td><td id="0-2Q">15,231</td></tr>
+<tr><td id="0-2R">iPad</td><td id="0-2S">6,402</td><td id="0-2T">5,559</td><td id="0-2U">14,490</td><td id="0-2V">12,582</td></tr>
+<tr><td id="0-2W">Wearables, Home and Accessories</td><td id="0-2X">7,522</td><td id="0-2Y">7,913</td><td id="0-2Z">19,269</td><td id="0-30">19,866</td></tr>
+<tr><td id="0-31">Services</td><td id="0-32">26,645</td><td id="0-33">23,867</td><td id="0-34">52,985</td><td id="0-35">46,984</td></tr>
+<tr><td id="0-36">Total net sales</td><td id="0-37">$ 95,359</td><td id="0-38">$ 90,753</td><td id="0-39">$ 219,659</td><td id="0-3a">$ 210,328</td></tr>
+</table>
+
+a70f5b7e-ef72-4310-958b-3863cf3417c9
+Apple Inc.
+efba8adc-f8fd-4f30-b830-8b27b4b283e3
+**CONDENSED CONSOLIDATED BALANCE SHEETS (Unaudited)**
+(In millions, except number of shares, which are reflected in thousands, and par value)
+50531b6d-7259-4ffe-8aad-cbb5b100c3c6
+<table id="1-1">
+<tr><td id="1-2"></td><td id="1-3">March 29, 2025</td><td id="1-4">September 28, 2024</td></tr>
+<tr><td id="1-5" colspan="3">ASSETS:</td></tr>
+<tr><td id="1-6" colspan="3">Current assets:</td></tr>
+<tr><td id="1-7">Cash and cash equivalents</td><td id="1-8">$ 28,162</td><td id="1-9">$ 29,943</td></tr>
+<tr><td id="1-a">Marketable securities</td><td id="1-b">20,336</td><td id="1-c">35,228</td></tr>
+<tr><td id="1-d">Accounts receivable, net</td><td id="1-e">26,136</td><td id="1-f">33,410</td></tr>
+<tr><td id="1-g">Vendor non-trade receivables</td><td id="1-h">23,662</td><td id="1-i">32,833</td></tr>
+<tr><td id="1-j">Inventories</td><td id="1-k">6,269</td><td id="1-l">7,286</td></tr>
+<tr><td id="1-m">Other current assets</td><td id="1-n">14,109</td><td id="1-o">14,287</td></tr>
+<tr><td id="1-p">Total current assets</td><td id="1-q">118,674</td><td id="1-r">152,987</td></tr>
+<tr><td id="1-s"></td><td id="1-t"></td><td id="1-u"></td></tr>
+<tr><td id="1-v" colspan="3">Non-current assets:</td></tr>
+<tr><td id="1-w">Marketable securities</td><td id="1-x">84,424</td><td id="1-y">91,479</td></tr>
+<tr><td id="1-z">Property, plant and equipment, net</td><td id="1-A">46,876</td><td id="1-B">45,680</td></tr>
+<tr><td id="1-C">Other non-current assets</td><td id="1-D">81,259</td><td id="1-E">74,834</td></tr>
+<tr><td id="1-F">Total non-current assets</td><td id="1-G">212,559</td><td id="1-H">211,993</td></tr>
+<tr><td id="1-I">Total assets</td><td id="1-J">$ 331,233</td><td id="1-K">$ 364,980</td></tr>
+<tr><td id="1-L"></td><td id="1-M"></td><td id="1-N"></td></tr>
+<tr><td id="1-O" colspan="3">LIABILITIES AND SHAREHOLDERS&#x27; EQUITY:</td></tr>
+<tr><td id="1-P" colspan="3">Current liabilities:</td></tr>
+<tr><td id="1-Q">Accounts payable</td><td id="1-R">$ 54,126</td><td id="1-S">$ 68,960</td></tr>
+<tr><td id="1-T">Other current liabilities</td><td id="1-U">61,849</td><td id="1-V">78,304</td></tr>
+<tr><td id="1-W">Deferred revenue</td><td id="1-X">8,976</td><td id="1-Y">8,249</td></tr>
+<tr><td id="1-Z">Commercial paper</td><td id="1-10">5,982</td><td id="1-11">9,967</td></tr>
+<tr><td id="1-12">Term debt</td><td id="1-13">13,638</td><td id="1-14">10,912</td></tr>
+<tr><td id="1-15">Total current liabilities</td><td id="1-16">144,571</td><td id="1-17">176,392</td></tr>
+<tr><td id="1-18"></td><td id="1-19"></td><td id="1-1a"></td></tr>
+<tr><td id="1-1b" colspan="3">Non-current liabilities:</td></tr>
+<tr><td id="1-1c">Term debt</td><td id="1-1d">78,566</td><td id="1-1e">85,750</td></tr>
+<tr><td id="1-1f">Other non-current liabilities</td><td id="1-1g">41,300</td><td id="1-1h">45,888</td></tr>
+<tr><td id="1-1i">Total non-current liabilities</td><td id="1-1j">119,866</td><td id="1-1k">131,638</td></tr>
+<tr><td id="1-1l">Total liabilities</td><td id="1-1m">264,437</td><td id="1-1n">308,030</td></tr>
+<tr><td id="1-1o"></td><td id="1-1p"></td><td id="1-1q"></td></tr>
+<tr><td id="1-1r" colspan="3">Commitments and contingencies</td></tr>
+<tr><td id="1-1s"></td><td id="1-1t"></td><td id="1-1u"></td></tr>
+<tr><td id="1-1v" colspan="3">Shareholders&#x27; equity:</td></tr>
+<tr><td id="1-1w">Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares authorized; 14,939,315 and 15,116,786 shares issued and outstanding, respectively</td><td id="1-1x">88,711</td><td id="1-1y">83,276</td></tr>
+<tr><td id="1-1z">Accumulated deficit</td><td id="1-1A">(15,552)</td><td id="1-1B">(19,154)</td></tr>
+<tr><td id="1-1C">Accumulated other comprehensive loss</td><td id="1-1D">(6,363)</td><td id="1-1E">(7,172)</td></tr>
+<tr><td id="1-1F">Total shareholders&#x27; equity</td><td id="1-1G">66,796</td><td id="1-1H">56,950</td></tr>
+<tr><td id="1-1I">Total liabilities and shareholders&#x27; equity</td><td id="1-1J">$ 331,233</td><td id="1-1K">$ 364,980</td></tr>
+</table>
+
+000c557d-016c-4b8b-ab0d-5060a95799e0
+Apple Inc.
+CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited)
+(In millions)
+7938a283-5dae-4a8d-a77d-049609eea718
+<table id="2-1">
+<tr><td id="2-2"></td><td id="2-3" colspan="2">Six Months Ended</td></tr>
+<tr><td id="2-4"></td><td id="2-5">March 29, 2025</td><td id="2-6">March 30, 2024</td></tr>
+<tr><td id="2-7">Cash, cash equivalents, and restricted cash and cash equivalents, beginning balances</td><td id="2-8">$ 29,943</td><td id="2-9">$ 30,737</td></tr>
+<tr><td id="2-a"></td><td id="2-b"></td><td id="2-c"></td></tr>
+<tr><td id="2-d" colspan="3">Operating activities:</td></tr>
+<tr><td id="2-e">Net income</td><td id="2-f">61,110</td><td id="2-g">57,552</td></tr>
+<tr><td id="2-h">Adjustments to reconcile net income to cash generated by operating activities:</td><td id="2-i"></td><td id="2-j"></td></tr>
+<tr><td id="2-k">Depreciation and amortization</td><td id="2-l">5,741</td><td id="2-m">5,684</td></tr>
+<tr><td id="2-n">Share-based compensation expense</td><td id="2-o">6,512</td><td id="2-p">5,961</td></tr>
+<tr><td id="2-q">Other</td><td id="2-r">(2,217)</td><td id="2-s">(1,971)</td></tr>
+<tr><td id="2-t">Changes in operating assets and liabilities:</td><td id="2-u"></td><td id="2-v"></td></tr>
+<tr><td id="2-w">Accounts receivable, net</td><td id="2-x">7,266</td><td id="2-y">7,727</td></tr>
+<tr><td id="2-z">Vendor non-trade receivables</td><td id="2-A">9,171</td><td id="2-B">12,164</td></tr>
+<tr><td id="2-C">Inventories</td><td id="2-D">858</td><td id="2-E">53</td></tr>
+<tr><td id="2-F">Other current and non-current assets</td><td id="2-G">(4,371)</td><td id="2-H">(4,438)</td></tr>
+<tr><td id="2-I">Accounts payable</td><td id="2-J">(14,604)</td><td id="2-K">(16,710)</td></tr>
+<tr><td id="2-L">Other current and non-current liabilities</td><td id="2-M">(15,579)</td><td id="2-N">(3,437)</td></tr>
+<tr><td id="2-O">Cash generated by operating activities</td><td id="2-P">53,887</td><td id="2-Q">62,585</td></tr>
+<tr><td id="2-R"></td><td id="2-S"></td><td id="2-T"></td></tr>
+<tr><td id="2-U" colspan="3">Investing activities:</td></tr>
+<tr><td id="2-V">Purchases of marketable securities</td><td id="2-W">(12,442)</td><td id="2-X">(25,042)</td></tr>
+<tr><td id="2-Y">Proceeds from maturities of marketable securities</td><td id="2-Z">26,587</td><td id="2-10">27,462</td></tr>
+<tr><td id="2-11">Proceeds from sales of marketable securities</td><td id="2-12">5,210</td><td id="2-13">4,314</td></tr>
+<tr><td id="2-14">Payments for acquisition of property, plant and equipment</td><td id="2-15">(6,011)</td><td id="2-16">(4,388)</td></tr>
+<tr><td id="2-17">Other</td><td id="2-18">(635)</td><td id="2-19">(729)</td></tr>
+<tr><td id="2-1a">Cash generated by investing activities</td><td id="2-1b">12,709</td><td id="2-1c">1,617</td></tr>
+<tr><td id="2-1d"></td><td id="2-1e"></td><td id="2-1f"></td></tr>
+<tr><td id="2-1g" colspan="3">Financing activities:</td></tr>
+<tr><td id="2-1h">Payments for taxes related to net share settlement of equity awards</td><td id="2-1i">(3,205)</td><td id="2-1j">(2,875)</td></tr>
+<tr><td id="2-1k">Payments for dividends and dividend equivalents</td><td id="2-1l">(7,614)</td><td id="2-1m">(7,535)</td></tr>
+<tr><td id="2-1n">Repurchases of common stock</td><td id="2-1o">(49,504)</td><td id="2-1p">(43,344)</td></tr>
+<tr><td id="2-1q">Repayments of term debt</td><td id="2-1r">(4,009)</td><td id="2-1s">(3,150)</td></tr>
+<tr><td id="2-1t">Repayments of commercial paper, net</td><td id="2-1u">(3,968)</td><td id="2-1v">(3,982)</td></tr>
+<tr><td id="2-1w">Other</td><td id="2-1x">(77)</td><td id="2-1y">(132)</td></tr>
+<tr><td id="2-1z">Cash used in financing activities</td><td id="2-1A">(68,377)</td><td id="2-1B">(61,018)</td></tr>
+<tr><td id="2-1C"></td><td id="2-1D"></td><td id="2-1E"></td></tr>
+<tr><td id="2-1F">Increase/(Decrease) in cash, cash equivalents, and restricted cash and cash equivalents</td><td id="2-1G">(1,781)</td><td id="2-1H">3,184</td></tr>
+<tr><td id="2-1I">Cash, cash equivalents, and restricted cash and cash equivalents, ending balances</td><td id="2-1J">$ 28,162</td><td id="2-1K">$ 33,921</td></tr>
+<tr><td id="2-1L"></td><td id="2-1M"></td><td id="2-1N"></td></tr>
+<tr><td id="2-1O" colspan="3">Supplemental cash flow disclosure:</td></tr>
+<tr><td id="2-1P">Cash paid for income taxes, net</td><td id="2-1Q">$ 31,683</td><td id="2-1R">$ 14,531</td></tr>
+</table>

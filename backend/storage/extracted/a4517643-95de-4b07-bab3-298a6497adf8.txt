@@ -1,0 +1,57 @@
+f2a71fee-78aa-46fd-99da-db3dd07924cb
+IndiGo Boarding Pass (Web Check-In)
+Your Departure Terminal is T
+SWARGIARY/CHAKUL MR
+GUWAHATI TO BENGALURU (T1)
+Flight: 6E 6542
+Gate: 7
+Boarding Time: 0835 Hrs
+Boarding: Zone 3
+Seat: 14A
+scan_code
+Date: 17 Feb 2026
+Seq: 086
+Departure: 09:20
+Services: -
+Gate is subject to change and will close 25 minutes prior to departure
+SWARGIARY/CHAKUL MR
+GAU -> BLR (T1)
+Flight: 6E 6542
+Date: 17 Feb 2026
+PNR: X9REMW
+Services: -
+scan_code
+Seat: 14A
+Seq: 086
+af34aca7-8e27-472d-a4e1-4d52430bd1e4
+logo: [Unknown] 30 YEARS OF WIND. The number "30" is prominent, with the "0" stylized as a leafy emblem in green, blue, and yellow.
+8f39a8a1-55b5-45c5-a930-3741189e4292
+3
+'EARS
+F WIND
+SUZLON
+POWERING A GREENER TOMORROW
+30 years
+of pioneering an industry
+This figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled "THE WIND MAN SHRI TULSI TANTI 1958-2022--" overlaid. A QR code is present in the bottom right corner with text below it.
+: figure
+India's no. 1
+wind energy solutions provider
+1,900+
+customers
+21+ GW
+delivered
+India's largest
+manufacturing capacity *
+1.5 million
+cumulative jobs
+Made in India,
+for the world
+India's most trusted winds
+Scan here to view
+our 30-year journey
+*Annual wind energy manufacturing capacity of 4,500 MW
+b08859f0-0cef-41f5-9e09-43c1a386e5eb
+scan_code: QR code
+Scan here to view our 30-year journey
+This is a clear, high-contrast QR code with text below it.

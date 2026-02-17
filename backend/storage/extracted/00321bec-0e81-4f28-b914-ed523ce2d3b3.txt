@@ -1,0 +1,1000 @@
+52276297-5465-4422-9f87-5bdd43438e6c
+transcription of the content
+: The word "CONFLUENT" is displayed in white sans-serif font next to a circular icon with radiating lines, all on a dark blue background.
+71b3ec4f-927e-46d4-94f6-5b6f351af5bc
+A Guide to Event-Driven Design for Agents and Multi-Agent Systems
+289c167d-59d3-4f88-a7d6-bccdfd8aee76
+By Sean Falconer, AI Entrepreneur in Residence, Confluent
+b5af28eb-bab7-4b26-825d-adaf7abc252d
+© 2025 Confluent, Inc.
+
+24a48a9c-b8fa-4dcc-85b8-d0479f0d9c93
+Contents
+5576e7e2-72ea-46c8-af2b-7bb62caecc15
+3 Introduction
+4 Part I: Understanding the Evolution of Al
+  The First Wave: Predictive Al
+  The Second Wave: Generative Al
+    Compound Al Bridges the Gap
+  The Third Wave: Agentic Al
+    The Power of Singular Agent Systems
+65033cfb-53a0-48aa-8adf-e3740d913d3b
+# 9 Part II: The Case for Event-Driven Agentic Systems
+## The Anatomy of an Agent
+*   Persona (Job Function)
+*   Perception (Sensing)
+*   Reasoning and Decision-Making
+*   Memory
+*   Planning
+*   Action
+*   Learning
+*   Coordination and Collaboration
+*   Tool Interface
+## Why Event-Driven Matters for Agents
+## From Singular to Multi-Agent Systems
+96ac4140-b591-4ae2-a714-0a1a2ad57745
+13 Part III: Design Patterns for Multi-Agent Systems
+- Multi-Agent Design Patterns
+  - Orchestrator-Worker Pattern
+    - Traditional Approach
+    - Event-Driven Approach
+  - Hierarchical Agent Pattern
+    - Traditional Approach
+    - Event-Driven Approach
+  - Blackboard Pattern
+    - Traditional Approach
+    - Event-Driven Approach
+  - Market-Based Pattern
+    - Traditional Approach
+    - Event-Driven Approach
+- The Role of the Data Streaming Platform in Multi-Agent Systems
+0239fecc-6a98-4d96-b57f-61ebff633a4e
+23 Part IV: Building Event-Driven Systems for Agents with a Data Streaming Platform
+  Architecting Singular and Multi-Agent Systems
+  Challenges and Solutions in Event-Driven Agent Design
+    [Stream] Next-Level Data Streaming with a Fully Managed, Cloud-Native Service
+    [Connect] Seamless Integration: Connecting Agents with Diverse Systems
+    [Process] Ensuring Data Freshness: Handling Dynamic Data Streams
+    [Govern] Data Quality, Security, and Compliance
+  Real-World Applications of Event-Driven Agentic Systems
+    1. Automating Web Scraping with AI Agents
+    2. Intelligent Business Copilots
+    3. Workflow Automation with a Drag-and-Drop Agent Builder
+  Broader Industry Impact
+  Why a Data Streaming Platform Is Essential for AI Agents
+a4a27b23-7969-46cf-a689-8415a2a94681
+28 The Future of AI is Event-Driven
+29 Take the Next Step
+5c1733fc-f435-4363-810f-77c5021b221a
+© 2025 Confluent, Inc.
+
+36005a27-52d3-4452-b9f4-484d66bdca46
+Introduction
+acf8114d-637a-43a7-83f8-5f297239ad8f
+AI has come a long way. We've moved from
+predictive models that analyze patterns to
+generative AI that creates new content. Now,
+we're entering the next phase: agentic AI—
+systems that don't just generate, but have the
+agency to act, adapt, and collaborate, in real
+time.
+3a688358-0a89-4a90-b330-e8090f1905ff
+For AI agents to be useful, they need
+more than just intelligence. They need
+infrastructure. They need security. They need
+governance.
+a85e17b2-892e-46aa-a40b-f010e8c38b58
+An agent must consume data, use tools,
+make decisions, and share outputs across
+an organization. But rigid, request-driven
+architectures can't keep up. APIs and
+synchronous workflows create bottlenecks,
+limit scalability, and make coordination
+between multiple agents a nightmare. The
+future of AI agents isn't about making models
+better, it's about making AI systems work
+together seamlessly.
+ed8aeeaa-c7a8-43d0-8499-81f0f775a9e7
+This demands an event-driven architecture
+(EDA) powered by a data streaming platform,
+which enables agents to react dynamically
+to changes, share state efficiently, and
+scale without the constraints of traditional
+request-response patterns. A data streaming
+platform not only facilitates real-time event
+processing, but also ensures governance,
+enforces data quality, and connects
+disparate data sources into a unified stream.
+83e3cbdd-32f8-469d-8d98-4bd0f3d6baa1
+By processing data close to the source, it
+reduces latency and enhances decision-
+making, allowing Al agents to operate with
+the freshest, most relevant data, while
+maintaining compliance and control across
+the organization.
+70f1e5ec-dbbe-4cce-aec5-a7976ad2992b
+EDA transforms AI from isolated models into
+a dynamic system of agents that react to
+events in real time. By using a data streaming
+platform, agents can consume, process,
+and emit events asynchronously, ensuring
+scalable, flexible, and resilient interactions.
+Whether it's a single agent handling customer
+queries, or a network of agents optimizing a
+supply chain, event-driven design ensures
+they stay in sync, without breaking down
+under complexity.
+7e3a1538-974c-4dc3-bc60-02f060123d77
+This ebook is a guide to building event-
+driven AI agents and multi-agent systems.
+We'll cover the evolution of AI, the anatomy
+of an agent, design patterns for scalable
+architectures, and real-world applications. At
+the core of this approach is a data streaming
+platform, which enables agents to consume,
+process, and act on real-time data, while
+maintaining governance and scalability. The
+goal is simple: to demonstrate why event-
+driven design—powered by a data streaming
+platform—is the backbone of AI's next
+evolution, and how to architect systems that
+are not only effective today, but are built for
+long-term scalability and adaptability.
+7da5a1a0-cd07-4d84-bca2-247f148909a8
+© 2025 Confluent, Inc.
+72703348-f4c8-4830-943b-3bc2a0aa6360
+3
+
+24761422-4cdb-4ba8-9c70-762c82583e0b
+Part I: Understanding the Evolution of Al
+Al has evolved through three distinct phases, each unlocking new capabilities, while introducing its own limitations.
+e2d7b7f4-af4c-46d5-9485-d7fc0738afaa
+# The First Wave: Predictive AI
+The first wave of AI revolved around traditional machine learning, focusing on predictive capabilities for narrowly defined tasks.
+f61973ee-7ae9-4dc8-bbe3-84fffbb521e4
+The Traditional Machine Learning Workflow: flowchart
+**batch process**
+*   **input** (specific, once)
+    *   Connected by an arrow to **feature engineering**
+    *   Connected by a dashed arrow to **app-specific data engineering** (dashed oval)
+*   **app-specific data engineering**
+    *   Connected by a dashed arrow to **feature engineering**
+*   **feature engineering**
+    *   Connected by an arrow to **model** (bespoke)
+*   **app**
+    *   Connected by an arrow to **model** (bespoke)
+*   **model** (bespoke)
+0153154b-6bc2-4264-84f7-0a42056df660
+Building these models required significant expertise, as they were crafted specifically for individual use cases. They were domain-specific, with their domain specificity embedded in the training data, making them rigid and tough to repurpose. Adapting a model to a new domain often meant starting from scratch—an approach that **lacked scalability** and **slowed adoption**.
+e873b570-dc9b-4892-81b3-f2fdc3c6dd5c
+The Second Wave: Generative AI
+Generative AI, driven by deep learning, marked a turning point.
+3f17cc21-be1b-42d9-ba6f-73adc6e3275d
+Instead of being confined to single domains, these generative models were trained on vast,
+diverse datasets, giving them the ability to generalize across a variety of contexts. They
+could generate text, images, and even videos, opening up exciting new applications. Whereas
+predictive AI relies on traditional batch-based statistical models to solve specific problems,
+generative AI uses foundation models like LLMs that are broadly capable and reusable:
+eed4751a-e247-4b0d-b148-2170a56f1e8f
+© 2025 Confluent, Inc.
+685808c6-b9f1-479a-8efd-0ef5cb8dc13c
+4
+
+4424c5dd-4887-4678-9f90-a4054da59087
+The Generative AI Workflow
+: flowchart::
+This flowchart illustrates the Generative AI Workflow, showing several interconnected steps:
+1.  An "input (general, once)" box points to a "deep learning" box.
+2.  The "deep learning" box points to a "model (reusable)" box.
+3.  An "input (specific, continuous)" box points to a "prompt assembly" box.
+4.  An "app-specific data engineering" oval (dashed outline) points with a dashed arrow to the "prompt assembly" box.
+5.  An "app" box points to the "prompt assembly" box.
+6.  The "prompt assembly" box points to the "model (reusable)" box.
+3444764d-4b47-40f4-8719-ef94b0e2fed4
+However, this wave came with its own challenges.
+58293ad4-2ceb-4825-ac4d-a5128a03e4ac
+Generative models are **fixed in time**—unable to incorporate new or dynamic information—
+and are **difficult to adapt**. Fine-tuning can address domain-specific needs, but it's expensive
+and error-prone. Fine-tuning requires vast data, significant computational resources, and ML
+expertise, making it impractical for many situations. Additionally, since LLMs are trained on
+publicly available data, they don't have access to domain-specific information, limiting their
+ability to accurately respond to questions that require context.
+e477d6ed-535f-469a-b44e-fac4ff92ea43
+For example, suppose you ask a generative model to recommend an insurance policy tailored to a user's personal health history, location, and financial goals.
+3643ad44-9f2c-4035-9ad7-a9c5c8faa084
+Flowchart:
+Input prompt bubble: "Recommend an insurance policy based on my health history, ..."
+Arrow from input prompt bubble to text: Prompt
+Arrow from Prompt to box containing neural network icon and text: LLM
+Arrow from LLM box to text: Final Response
+Arrow from Final Response to output response bubble: "Here are some factors to keep in mind when choosing a policy...."
+Caption: Simple Prompt and Response with an LLM
+:flowchart
+77643f85-0b83-4bc1-a0f4-9ea4e8370cd5
+In this scenario, you prompt the LLM and it generates a response. Clearly the model can't deliver accurate recommendations, because it lacks access to the relevant user data. Without it, the response will either be generic or flat-out wrong.
+63be0954-6c69-418f-8303-71201e2e219f
+© 2025 Confluent, Inc.
+d004ae0b-c381-453d-891b-5d08ee1a00ee
+5
+
+a9cf5de3-4064-469b-95b2-9c86e2ac92a0
+Compound AI Bridges the Gap
+To overcome these limitations, Compound AI systems integrate generative models with other components like programmatic logic, data retrieval mechanisms, and validation layers. This modular design allows AI to combine tools, fetch relevant data, and tailor outputs in a way that static models cannot.
+11dc7b31-7b1b-40f1-9416-0a07e17396a6
+For instance, in the insurance recommendation example:
+* A retrieval mechanism pulls the user's health and financial data from a secure database.
+* This data is added to the context provided to the LLM during prompt assembly.
+* The LLM uses the assembled prompt to generate an accurate response.
+2ab6da1a-242a-4502-9058-30ca5c7b311c
+Flowchart showing a Simple RAG Architecture:
+1.  An input labeled "Prompt" feeds into two components:
+    a.  A rectangular box labeled "Prompt Assembly: Original Prompt + Context".
+    b.  A cylindrical shape labeled "Vector" (with an empty square bracket icon inside).
+2.  The "Vector" component provides "Relevant Context" to the "Prompt Assembly" box.
+3.  The "Prompt Assembly" box feeds into a rectangular box labeled "LLM" (which contains an icon resembling a neural network).
+4.  The "LLM" box outputs "Final Response".
+Caption: Simple RAG Architecture
+: flowchart
+594e9f3b-b78a-47fe-895f-82b718e03360
+This process, known as Retrieval-Augmented Generation (RAG), bridges the gap between static AI and real-world needs by dynamically incorporating relevant data into the model's workflow.
+0d3936fc-f7eb-40d3-b1f2-295c9937aedb
+While RAG effectively handles tasks like this, it relies on **fixed workflows**, meaning every interaction and execution path must be predefined. This rigidity makes it impractical to handle more complex or dynamic tasks, where workflows cannot be exhaustively encoded. Encoding all possible execution paths manually is labor-intensive and ultimately limiting.
+55b9c894-7991-42e8-a93e-ad4c074b3cf5
+The limitations of fixed-flow architectures have led to the rise of the third wave of AI: **agentic systems**.
+a8658896-707b-49e5-8fd6-7473c62a0666
+# The Third Wave: Agentic AI
+As HubSpot CTO Dharmesh Shah put it, "Agents are the new apps." Salesforce CEO Marc Benioff echoed this sentiment on The Wall Street Journal's "Future of Everything" podcast, emphasizing that the future of AI lies with autonomous agents—systems that can think, adapt, and act independently.
+fce3344a-8809-4d22-835a-ceb7bc31ded3
+Agents bring something fundamentally new: dynamic, context-driven workflows. Unlike traditional
+AI models that follow predefined paths, agentic systems determine the best course of action on
+the fly, adapting in real time to the challenges they face. This makes them particularly well-suited
+for solving complex, interconnected problems, in enterprise environments.
+614ff80b-4ad3-4ba3-a1bf-f4ba51bbc356
+© 2025 Confluent, Inc.
+458f7a20-dbbc-43b3-a0f6-a5907d527e33
+6
+
+4afc7726-640d-441f-99df-bfc5ff903b95
+hierarchy diagram
+: A diagram titled "Control Logic" shows two branches:
+- On the left, "Programmatic". Below this, an arrow pointing left is labeled "Fixed Flow".
+- On the right, "Agent". Below this, an arrow pointing right is labeled "Variable Flow".
+Between "Programmatic" and "Agent" there is a double-headed arrow labeled "Autonomy Tradeoff".
+Control Logic: Programmatic vs. Agentic
+cfa9ddd0-ef8f-46ad-8f5d-aa3343bfd37e
+Agents flip traditional control logic on its head.
+b1038f39-ffbe-4d12-971f-54e313f4dbb0
+Instead of rigid programs dictating every move, agents use LLMs to drive decisions. They can reason, use tools, and access memory—all dynamically. This flexibility allows for workflows that evolve in real time, making agents far more powerful than anything built on fixed logic.
+1de142a9-c350-43c3-8266-d4d495a459f2
+A flowchart illustrating an agent architecture. The process starts with an oval labeled "Perceive" (yellow). An arrow leads from "Perceive" to a rectangle labeled "Memory Stream" (light green). "Memory Stream", along with "Retrieve" and "Retrieved Memories", are enclosed within a dashed rectangular box labeled "Generative Agent Memory".
+Inside the "Generative Agent Memory" box:
+- An arrow goes from "Memory Stream" to a rectangle labeled "Retrieve" (light green).
+- An arrow goes from "Retrieve" to a rectangle labeled "Retrieved Memories" (light green).
+From "Retrieved Memories":
+- An arrow leads out to an oval labeled "Act" (pink).
+- An arrow loops up to a rectangle labeled "Plan" (light blue). An arrow then goes from "Plan" back to "Memory Stream".
+- An arrow loops down to a rectangle labeled "Reflect" (light blue). An arrow then goes from "Reflect" back to "Memory Stream".
+Agent Architecture (inspired by https://arxiv.org/pdf/2304.03442)
+: flowchart
+6375f9f7-deda-46ba-a4e0-547476adbecb
+© 2025 Confluent, Inc.
+58adee97-fa00-4944-8b85-f98ce8e3bc4c
+7
+
+785127ed-ee84-4af1-be74-dc8244cbd8bf
+# The Power of Singular Agent Systems
+A single agent can be powerful when designed correctly. Effective AI agents share key characteristics:
+*   **Autonomy**: They operate without constant human intervention.
+*   **Adaptability**: They adjust to new data and changing conditions.
+*   **Decision-Making**: They evaluate multiple options and select the best course of action.
+2a539a19-8dd9-4acb-a4fc-a4536408517f
+However, traditional architectures make deploying such agents challenging.
+254cf9ff-8da3-445b-b410-20ca4f254265
+AI systems struggle with data freshness, integration complexity, security, governance, and real-time responsiveness. Many still rely on batch-based processing, leading to decisions made based on stale data, while fragmented data landscapes make it difficult to establish contextualized and trustworthy data. These challenges create a data mess, where agents lack the reliable, real-time inputs needed to make effective decisions. This highlights the need for an event-driven foundation powered by a data streaming platform, where agents can securely react to live events, enforce governance, and integrate data from disparate sources in real time—eliminating bottlenecks, and enabling AI systems to operate with speed, accuracy, and compliance.
+add704b2-588c-4217-aa91-c1754d1a6fcc
+Before we explore why event-driven design is critical, we need to break down the fundamental
+components of an agent. Understanding the anatomy of an agent provides the foundation for
+architecting scalable, interoperable Al systems.
+89e1c72a-f348-479c-b355-877c64b3aab9
+© 2025 Confluent, Inc.
+5a7a0001-f05b-4a8d-97a4-d3002266dafc
+8
+
+7f1f75fb-680c-4466-8d75-e785f5f3ca95
+## Part II: The Case for Event-Driven Agentic Systems
+In artificial intelligence, agents have a long history, from early theoretical considerations by Ala Turing and John McCarthy, to rule-based reasoning agents in the 1960s. These agents were designed to act autonomously within a defined context, but their capabilities were limited by narrow applications and rigid logic.
+80b421dd-2cca-4a0a-b976-55d162b96d1b
+Today, the emergence of foundation models has transformed what's possible.
+c676794c-ea8b-436e-a2f3-8c53700782e3
+## The Anatomy of an Agent
+Just like humans, agents solve problems by combining their senses, memory, reasoning, and ability to act. But before diving into these mechanics, there's one foundational element that underpins everything: their persona.
+5b26baa4-328d-43a6-abfb-cf0bedc6ed64
+flowchart
+: The diagram titled "The Anatomy of an Agent" illustrates the components and interactions within and around an agent system.
+At the top, a dashed rectangle labeled "Shared Memory" contains two cylinders: "Short-Term" and "Long-Term". Bi-directional arrows connect "Shared Memory" to "Agent #1" (a green rounded rectangle), the main green rectangle representing "Agent #2", and "Agent #3" (a green rounded rectangle).
+The central green rectangle represents the main agent system, encompassing "Agent #2" and its internal processes.
+Inside the green rectangle:
+- A light blue rectangle labeled "Agent #2" is central.
+- Above "Agent #2", a yellow rectangle labeled "Memory" contains two cylinders: "Short-Term" and "Long-Term". Bi-directional arrows connect "Agent #2" to this internal "Memory".
+- To the left of "Agent #2", a rectangle labeled "Learn" is connected to "Agent #2" by bi-directional arrows and to the internal "Memory" by a bi-directional arrow.
+- To the right of "Agent #2", a rectangle labeled "Reason" is connected to "Agent #2" by a uni-directional arrow pointing to "Reason". A purple rectangle labeled "LLM" is connected to "Reason" by a bi-directional arrow.
+- Below "Agent #2", there are several connected components:
+  - "Persona" (rectangle) points to "Perceive" (rectangle).
+  - "Perceive" points to "Tools" (diamond shape).
+  - "Agent #2" also points to "Perceive" and "Plan" (rectangle).
+  - "LLM" is also connected to "Plan" by a bi-directional arrow.
+  - "Tools" points to "Plan" and "Act" (rectangle).
+  - "Plan" points to "Act".
+External connections:
+- "Agent #1" and "Agent #3" are connected to the main green rectangle (representing Agent #2's system) by bi-directional arrows.
+- Below "Tools", there are two dashed rectangles:
+  - "Feedback Systems" contains "Users" and "Interaction Logs". "Tools" is connected to "Feedback Systems" by bi-directional arrows.
+  - "External Systems" contains "Databases", "Warehouses", "Applications", "IoT Devices", "CRM/CDP", and "Web". "Tools" is connected to "External Systems" by bi-directional arrows.
+: flowchart
+The Anatomy of an Agent
+b773f24e-4202-4e71-922b-d4dc88ba01dd
+© 2025 Confluent, Inc.
+60fc425c-a112-4383-bdf0-b6aa59f34acb
+9
+
+e52c6e5b-4887-4e62-ac52-55df652f5be2
+# Persona (Job Function)
+The persona of an agent defines its job function and expertise. It's like a detailed job description embedded into the system prompt, shaping the agent's behavior and responses. The system prompt sets expectations, and influences the model's probability distribution over tokens, to align outputs with the defined role.
+a6571854-e71c-41f8-95c0-714c4418a538
+**Perception (Sensing)**
+With a clear role, the first step to solving any problem is understanding the environment. For agents, perception is their sensory input—how they gather data from the world around them. Humans use eyes, ears, and touch; agents use APIs, sensors, and user inputs.
+e71ef227-95ca-4eaf-8c52-b2431c90731a
+**Reasoning and Decision-Making**
+Once information is gathered, it needs to be processed and understood. Reasoning is the agent's ability to analyze data, derive insights, and decide what to do next. For humans, this happens in the brain. For agents, it's powered by models like LLMs, which dynamically adapt to inputs and contexts.
+54f43420-9c4f-440a-ba77-05f193fe0ae5
+Memory
+Memory allows agents to retain domain-specific information across interactions. It's not about learning, which is a separate part of the anatomy. Humans rely on both short-term memory (like recalling the start of a conversation) and long-term memory (like remembering a skill learned years ago). Agents work the same way.
+300a4545-3e56-4743-81b9-078ab2abb5ce
+Short-term memory allows the agent to keep track of the immediate context within a conversation, which might be stored temporarily in memory buffers during the session. Meanwhile, long-term memory involves storing historical data, such as user preferences or past interactions. This could be a vector database like MongoDB, Elasticsearch, Pinecone, or another permanent storage. A vector database enables semantic search, where embeddings allow the agent to retrieve relevant information efficiently.
+59b16f18-c13e-4c7b-a6b1-f3a3d0d5755a
+Planning
+Once the agent knows what needs to be done, it devises a plan to achieve its goal. This step mirrors how humans strategize: breaking a problem into smaller steps and prioritizing actions.
+8f7b3204-3d03-4b60-860a-9ac17fa1f3f2
+## Action
+Planning is worthless without execution. Action is where agents interact with the world, whether by sending a message, controlling a device, or updating a database.
+f981b0aa-d5dc-472a-9e8d-edc660418068
+The agent's execution handlers are responsible for ensuring these actions are performed accurately, and for validating the outcomes.
+7ec9e9a0-d4c7-45f4-87d0-0ab7f01c6a48
+## Learning
+Humans improve by learning from mistakes and adapting to new information. Agents do the same, using machine learning to refine their reasoning, improve predictions, and optimize actions.
+3b7d93f1-0de8-4d6b-8e29-bc2714d699f8
+This process may involve adjusting the agent's context dynamically during prompt assembly,
+allowing it to refine its responses based on situational feedback, without making permanent
+changes to the model's weights. Alternatively, learning can also occur through reinforcement
+4149914d-0e43-4871-9c22-3c6bb0adcd8d
+© 2025 Confluent, Inc.
+fa299f8b-28a5-4e61-9f6b-4e9b08c04fc7
+10
+
+a819a61c-68c8-4c2c-8c27-5a0770fe2d96
+learning, where decision-making is optimized using rewards or penalties tied to specific actions.
+In many cases, adapting context provides a flexible and efficient way for agents to improve,
+without the overhead of fine-tuning.
+c6b5f08d-2af1-4aa6-ba1c-6d4c209ef307
+## Coordination and Collaboration
+Humans rarely work alone—we collaborate, share knowledge, and divide tasks. In multi-agent systems, coordination enables agents to do the same, working together to achieve shared goals.
+1ca0b8db-40f5-4286-8ce7-3e60a8776d87
+# Tool Interface
+Humans use tools to amplify their capabilities—doctors use stethoscopes, and programmers use integrated development environments (IDEs). Agents are no different. The tool interface is their bridge to specialized capabilities, allowing them to extend their reach, and operate effectively in the real world.
+523733d9-7fd9-4c28-9b73-9e0028338def
+These interfaces often rely on modular API handlers or plugin architectures, allowing the agent to extend its functionality dynamically and efficiently. Agents sense their environment, process inputs, recall relevant information, make decisions, and take action. These steps mirror human cognition and problem-solving, but operate within digital ecosystems.
+5b7cce65-d3df-475a-9eff-0addfe802d65
+# Why Event-Driven Matters for Agents
+Agents, at their core, function much like microservices—as modular, independent units that execute specific tasks. However, unlike traditional microservices, agents don't just process requests; they reason, plan, and take actions based on stateful information. Without proper coordination, this complexity can quickly spiral out of control.
+12ebd77c-4aee-474e-a221-33c83084c875
+Imagine deploying hundreds of microservices without guardrails—without standardized communication, state synchronization, or failure recovery mechanisms. The result would be chaos. The same applies to multi-agent systems: without a structured framework, agents become fragmented, inefficient, and unreliable.
+1d15bfa9-574d-4c60-a847-e53373304903
+Microservices architecture evolved to solve similar challenges by shifting from tightly coupled,
+request/response-based communication to event-driven design.
+18234bd6-1d27-4164-ab97-cc16401f7ba8
+Early monolithic applications struggled to scale, because every component had direct dependencies on others. Microservices addressed this by decoupling services, allowing them to operate independently. But managing interservice communication through APIs still introduced bottlenecks. The breakthrough came with event-driven architectures (EDA), where services could react to changes asynchronously, enabling real-time responsiveness and scalability.
+1d86451d-626e-4eac-a62b-a1d40f5841ca
+Flowchart depicting two microservice architectures side-by-side, with an arrow indicating a transition between them.
+Left Architecture:
+- Five microservices: Microservice A, Microservice B, Microservice C, Microservice D, and Microservice E.
+- All microservices are interconnected with bidirectional arrows, showing direct communication between them.
+Transition Arrow: ->
+Right Architecture:
+- A central "Event Broker" component.
+- Microservice A and Microservice B have arrows pointing to the "Event Broker", with a dashed arrow labeled "Published events" also pointing to the broker.
+- The "Event Broker" has arrows pointing to Microservice C, Microservice D, and Microservice E. A dashed arrow labeled "Consumed events" points from Microservice E back towards the broker.
+: flowchart
+fadddf8c-8f6e-4a1a-99b5-29a7e4db8dd1
+Tightly Coupled Microservices to Event-Driven Microservices
+ddfb455a-f4dd-47ec-80c6-b9e4b6fc9048
+© 2025 Confluent, Inc.
+c4df5807-0795-4e55-a739-43601bdc434c
+11
+
+a08fdd3b-6b59-4701-98df-991ae56b62c0
+Agents need the same shift.
+1a7dac68-5c74-42e3-a7e7-6ac3c0a56b8c
+Instead of rigid, API-driven interactions, they should operate in an event-driven ecosystem, consuming and emitting events dynamically. EDA provides the necessary foundation for scalable, adaptive agents by ensuring:
+*   **Asynchronous Processing:** Agents can process tasks as events arrive, avoiding bottlenecks caused by synchronous API calls.
+*   **Scalability:** New agents can join the system without disrupting existing workflows, much like adding new microservices to an event-driven infrastructure.
+*   **Loose Coupling:** Agents interact via event streams rather than direct dependencies, reducing fragility and enabling modular development.
+*   **Real-Time Responsiveness:** Agents react instantly to events, ensuring that decisions are made based on the latest available data.
+574a2594-bd22-4eff-9ff1-1c4703ff5366
+By borrowing from microservices architecture, event-driven agentic systems enable flexibility,
+resilience, and efficiency at scale. Just as microservices rely on message brokers like Apache
+Kafka® for asynchronous communication, agents leverage event streaming to collaborate without
+rigid dependencies. A data streaming platform takes this further by not just streaming data, but also
+connecting disparate data sources, processing events in motion, and enforcing governance.
+d8f4d4d5-0016-4869-aa4a-6fa93e0c522f
+With a data streaming platform, agents operate on real-time, contextualized data, avoiding stale insights from batch processing. It enables dynamic filtering, transformation, and secure data sharing, ensuring decisions are made with the freshest, most relevant information. This keeps agent ecosystems adaptive, scalable, and ready for real-world challenges—moving beyond static, request-driven workflows, to truly autonomous AI systems.
+f7b2c7cf-6ce6-44b6-b263-2a4df5eadfa8
+From Singular to Multi-Agent Systems
+As powerful as a single agent can be, its capabilities are inherently limited by its scope.
+9c43b213-b874-4d08-b72e-89e24be8305e
+No single agent can handle every possible task with full expertise, just as no individual worker in a company can effectively perform every job. The real promise of agentic AI lies in multi-agent systems (MAS), where multiple specialized agents work together, coordinating actions, exchanging information, and dynamically adapting to changes.
+6257c638-1c24-449a-b0ce-16583ee5fb9f
+A MAS is a network of agents that collaborate (or sometimes compete) to solve complex problems more effectively than any single agent could on its own. These systems are designed to distribute workloads, balance specialization, and enable decentralized decision-making.
+fe120010-29a7-47a9-9952-73cc6faf4858
+Multi-agent systems allow:
+*   **Task Delegation**: Agents specialize in specific domains and distribute workloads efficiently.
+*   **Parallel Processing**: Agents execute tasks simultaneously without bottlenecks.
+*   **Dynamic Role Allocation**: Responsibilities shift based on changing requirements.
+8091b891-48f3-401e-b787-a356c32cb091
+To function effectively, multi-agent systems require seamless coordination and communication.
+Traditional API-based integrations create tight coupling, where agents must know exactly which
+other agents to interact with. This approach does not scale. As the number of agents grows, the
+complexity of interactions increases exponentially.
+c140637c-781d-4ebd-87c1-69da8ff5aeab
+Event-driven architecture ensures seamless coordination, enabling agents to operate as part of an adaptive, resilient ecosystem. In the next section, we'll explore the design patterns that make multi-agent interactions scalable and efficient.
+115eb703-426a-40b0-8c6c-34f1d16ba18c
+© 2025 Confluent, Inc.
+a61b7a92-eb9a-4cc6-ab0b-4ebc119194fa
+12
+
+26f91d74-64a7-468d-8482-43b0690186d1
+# Part III: Design Patterns for Multi-Agent Systems
+Enterprises require networks of agents that collaborate, share context, and execute workflows together. However, scaling from a single agent to a multi-agent system introduces significant challenges:
+*   **Context and Data Sharing:** Agents must exchange information efficiently without duplication, loss, or inconsistency.
+*   **Scalability and Fault Tolerance:** Systems should handle a growing number of agents, while ensuring recovery from failures.
+*   **Integration Complexity:** Agents interact with diverse tools and data sources, requiring seamless interoperability.
+*   **Timely and Accurate Decisions:** Agents need access to fresh, real-time data to make informed decisions without delay.
+*   **Safety and Validation:** Guardrails are necessary to prevent unintended behaviors and ensure reliable, high-quality outputs.
+*   **Security and Governance:** Organizations must enforce data security, compliance, and lineage to maintain trust and control.
+*   **Operational Overhead:** Managing infrastructure for data pipelines, integration, and compute at scale adds significant burden.
+*   **Lack of Global Availability:** AI systems require real-time data access and processing across regions to support global operations.
+1bae69f9-87cb-4c36-92a6-f123e492730f
+Confluent Data Streaming Platform is the future-proof foundation for addressing these challenges. It acts as the communication layer and data enabler in the agentic AI stack:
+0d3a6611-3de6-49bd-ac36-aad5a987dd3f
+Agent Frameworks
+Logos for Agent Frameworks: LangGraph, LlamaIndex, AutoGen, crewAI, phidata: logos
+Agentic AIOps
+Agent Hosting & Serving Memory Tool Libraries Monitoring / Observability
+Data Platforms & Management
+Enterprise Data Data Ingestion Cleaning Vector Store Data Lake/Warehouse
+Foundation Models
+Logos for Foundation Models: OpenAI, Anthropic, Amazon Nova, Llama 2, Cohere, Gemini, AI21 Labs, Mistral AI, deepseek: logos
+Cloud Platforms
+Logos for Cloud Platforms: Microsoft Azure, Google Cloud, AWS: logos
+Compute
+Logos for Compute: Intel, NVIDIA, AMD: logos
+Box with Confluent logo and text "End-to-End Agents with Confluent Data Streaming Platform", below which are four buttons arranged in a 2x2 grid: Stream, Connect, Process, Govern: figure
+98d6e158-19dc-4782-8521-5ca18cc9859c
+© 2025 Confluent, Inc.
+9a4704db-5fdd-4508-b8d8-7917954bd3bb
+13
+
+88bb0bd9-1f4a-4f4b-ae23-c080c76ad830
+By combining four key pillars—Stream, Connect, Process, and Govern—Confluent enables agents to seamlessly consume, process, and act on data in motion.
+*   **Streaming** ensures real-time event flow, allowing agents to react instantly to changes.
+*   **Connectors** integrate disparate data sources, removing bottlenecks in interoperability.
+*   **Stream Processing** transforms and enriches data in motion, enabling contextualized decision-making.
+*   **Stream Governance** enforces security, compliance, and data quality, ensuring trust and reliability.
+4d1587d3-750e-4205-9f60-d3a062dd3c4f
+This section explores key design patterns that enable multi-agent systems to function as scalable,
+resilient, and adaptable networks, leveraging a data streaming platform to unlock real-time Al
+capabilities without infrastructure headaches.
+1c1f7baa-e2b5-4436-bc3c-aa6f1a301bd3
+## Multi-Agent Design Patterns
+Multi-agent design patterns define how autonomous agents communicate, collaborate, or compete to solve problems. These patterns structure interactions between agents, ensuring efficient decision-making and workload distribution.
+0f4dfe12-4bdd-49b5-9aec-db45e134279e
+Below, we examine four essential patterns: **Orchestrator-Worker**, **Hierarchical Agent**, **Blackboard**, and **Market-Based**, along with how event-driven architectures transform them into scalable, loosely coupled systems. A data streaming platform not only enables any multi-agent system design pattern, but goes far beyond just Apache Kafka®, providing all the tools to connect and unlock data from any system, enforce governance for quality and compliance, and process data into high-value streams that fuel real-time, intelligent agent decision-making.
+f0e7364d-e466-4f10-b91a-b34defcf961c
+## Orchestrator-Worker Pattern
+In the **Orchestrator-Worker** pattern, a central agent assigns tasks to worker agents and manages execution. This is akin to the **Master-Worker** pattern in distributed computing, where an orchestrator coordinates multiple independent workers that execute specific jobs.
+47886e33-8f06-4b1c-8a3f-03533c1856b8
+flowchart
+An Orchestrator-Worker Pattern is depicted. An "Orchestrator" node is at the top, pointing with arrows to three "Worker Agent" nodes: "Worker Agent #1", "Worker Agent #2", and "Worker Agent #3". Each of these worker nodes then points with an arrow downwards to a single "Aggregated Response" node at the bottom.
+:flowchart
+Orchestrator-Worker Pattern
+e0f48113-1d04-4944-8a75-96a6b07248c4
+© 2025 Confluent, Inc.
+44159fa5-e2c6-4899-9471-23d8fe22115e
+14
+
+33c030b1-0c49-4a16-9466-e527e1e84f3a
+Traditional Approach:
+* The orchestrator assigns tasks to worker agents.
+* Workers execute tasks and return results to the orchestrator.
+* If a worker fails, the orchestrator must reassign tasks manually.
+eab48250-3bc1-49b9-8563-b35a2fe0de10
+## Event-Driven Approach:
+Using data streaming, we can adapt this pattern to make the agents event-driven. Confluent Data Streaming Platform offers key-based Kafka partitioning strategies, so the orchestrator can use keys to distribute command messages across partitions in a single topic. Worker agents can then act as a consumer group, pulling events from one or more assigned partitions to complete the work. Each worker agent then sends output messages into a second topic, where it can be consumed by downstream systems.
+45ea2696-4496-458d-9f30-c4c03e2de68c
+The pattern now looks like this:
+f93d5496-6184-41d4-a15e-c8b271beb60d
+A flowchart illustrates a Data Streaming Platform implementing an Event-Driven Orchestrator-Worker Pattern. On the left, an "Orchestrator" component sends messages via arrows to an "Orchestration Topic." The Orchestration Topic is enclosed in a dashed rectangle and contains three sub-components: "Partition 1," "Partition 2," and "Partition 3." Each partition is represented by a green rectangle filled with horizontal lines, signifying queued messages or events. From the Orchestration Topic, arrows extend from "Partition 1" to "Worker Agent #1," from "Partition 2" to "Worker Agent #2," and from "Partition 3" to "Worker Agent #3." Each "Worker Agent" is a distinct component shown as a light blue rounded rectangle. Finally, arrows from "Worker Agent #1," "Worker Agent #2," and "Worker Agent #3" converge and point to a "Response Topic." The Response Topic, also enclosed in a dashed rectangle, contains a green rectangle with horizontal lines, representing processed responses.: flowchart
+b38bd8cb-d041-4616-af18-7efb7b3ce597
+© 2025 Confluent, Inc.
+d7913045-16b8-42b4-85f3-ffebeb1770b0
+15
+
+7c5de2e8-1dcd-4e09-836b-3b02054a64cc
+While this diagram looks more complex, it dramatically simplifies the operations of the system.
+a548b691-f48b-46b2-b8b3-2312b0292c67
+The orchestrator no longer has to manage its connections to worker agents, including managing what happens if one dies, or handling more or fewer worker agents. Instead, it uses a keying strategy that distributes work across partitions. For events that should be processed by the stateful worker agent as some previous message, the same key can be used for each event in a sequence. The worker agents gain the benefits of any consumer group.
+58e93796-ef31-4fd3-bd05-7b3cdeb13b3a
+The worker agents pull from one or more partitions, and the Kafka Consumer Rebalance Protocol assures that each worker has similar workloads, even as worker agents are added or removed. In the event of a worker failure, the log can be replayed from a given partition for a saved offset. The orchestrator no longer needs bespoke logic for managing workers; instead, it simply specifies work and distributes it with a sensible keying strategy. Similarly, the worker agents inherit the functionality of a Kafka consumer group, so they can use common machinery for coordination, scaling, and fault recovery.
+06710c7e-3252-4c48-83a4-822f29ed0810
+This pattern allows for dynamic scaling, automatic fault recovery, and efficient workload distribution without the need for complex management logic.
+4a5aa3f4-2692-4fd8-97e5-c252377c2e67
+## Hierarchical Agent Pattern
+The **Hierarchical Agent** pattern organizes agents into layers, where higher-level agents oversee or delegate tasks to lower-level agents. This is ideal for breaking down complex problems into smaller, manageable parts.
+ec900ba9-006e-4d1d-aee5-2f432eddf8d2
+flowchart
+Top Level Agent
+- Connects to Mid Level Agent #1 (bidirectional arrows)
+- Connects to Mid Level Agent #2 (bidirectional arrows)
+- Connects to Mid Level Agent #3 (unidirectional arrow from Top Level Agent to Mid Level Agent #3)
+Mid Level Agent #1
+- Connects to Top Level Agent (bidirectional arrows)
+- Connects to Leaf Agent #1 (bidirectional arrows)
+- Connects to Leaf Agent #2 (bidirectional arrows)
+Mid Level Agent #2
+- Connects to Top Level Agent (bidirectional arrows)
+Mid Level Agent #3
+- Connects to Top Level Agent (unidirectional arrow from Top Level Agent to Mid Level Agent #3)
+Leaf Agent #1
+- Connects to Mid Level Agent #1 (bidirectional arrows)
+Leaf Agent #2
+- Connects to Mid Level Agent #1 (bidirectional arrows)
+Hierarchical Multi-Agent Pattern
+35583aa6-7915-4bd1-88cd-e1cd3e1d2cea
+Traditional Approach:
+* A central decision-making agent controls multiple subordinate agents.
+* Subordinate agents handle specialized tasks but require direct coordination.
+28a61635-42bd-42ba-9a6e-f2a517e634c4
+© 2025 Confluent, Inc.
+fa151b91-2a38-46b1-9d1c-f0f6f0c5cc0a
+16
+
+2c3c684d-bb62-45be-a2e8-13c07de23c9a
+**Event-Driven Approach:**
+To make the hierarchical pattern event-driven, we apply the same techniques for decomposing work in the orchestrator-worker pattern recursively in the agent hierarchy, such that each non-leaf node is the orchestrator for its respective subtree.
+35da833e-7fcc-41c8-a198-789b39e2ba12
+flowchart: The diagram illustrates an Event-Driven Hierarchical Multi-Agent Pattern within a Data Streaming Platform. The platform is represented by a large dashed rectangle containing several topics. 
+On the left, a "Top Level Agent" sends messages to the "Top Level Topic", which consists of "Partition 1", "Partition 2", and "Partition 3".
+From the "Top Level Topic":
+- "Partition 1" sends messages to "Mid Level Agent #3".
+- "Partition 2" sends messages to "Mid Level Agent #2".
+- "Partition 3" sends messages to "Mid Level Agent #1".
+Below the "Top Level Topic", there's a "Mid Level Topic" with "Partition 1" and "Partition 2".
+From the Mid Level Agents:
+- "Mid Level Agent #1" sends messages to "Mid Level Topic" (Partition 1).
+- "Mid Level Agent #2" sends messages to "Mid Level Topic" (Partition 2).
+- "Mid Level Agent #3" sends messages to "Mid Level Topic" (Partition 1).
+Below the "Mid Level Topic", two "Leaf Agents" receive messages:
+- "Mid Level Topic" (Partition 1) sends messages to "Leaf Agent #2".
+- "Mid Level Topic" (Partition 2) sends messages to "Leaf Agent #1".
+Response flow:
+- "Leaf Agent #1" sends messages to a "Mid Level Response Topic".
+- "Leaf Agent #2" sends messages to the "Mid Level Response Topic".
+The "Mid Level Response Topic" then sends messages to a "Top Level Response Topic".
+Additionally, all "Mid Level Agent #1", "Mid Level Agent #2", and "Mid Level Agent #3" also send messages directly to the "Top Level Response Topic".
+Finally, the "Top Level Response Topic" sends messages back to the "Top Level Agent".
+The overall pattern shown is an Event-Driven Hierarchical Multi-Agent Pattern.
+Event-Driven Hierarchical Multi-Agent Pattern
+38c812f0-5c3e-4b24-9ed7-5e2f1fbd5dec
+By making **hierarchical coordination event-driven**, agents publish and subscribe to event streams, rather than rely on direct supervision:
+* Higher-level agents publish objectives as events.
+* Mid-tier agents consume events, break down tasks, and issue new events to lower-tier agents.
+f0b17fd5-b491-41d2-b765-300fa89a4887
+© 2025 Confluent, Inc.
+011799ea-0242-47e6-b240-27f7c747502e
+17
+
+9eb12508-7200-422c-be37-12cb95135805
+- Execution agents consume low-level tasks, process them, and publish results.
+- Sibling agents form **consumer groups** to process shared workloads dynamically.
+With this approach, hierarchy is no longer rigid, agents can be added or removed dynamically without modifying the system's core logic. Asynchronous event processing ensures scalability while maintaining structured delegation.
+44407ff4-05f8-4b5b-991c-24e288bebbb4
+# Blackboard Pattern
+The **Blackboard Pattern** introduces a shared knowledge base—a "blackboard"—where agents asynchronously post and retrieve information. This pattern is widely used in complex problem-solving, such as collaborative AI systems and robotics.
+6a67a228-1dae-4948-b900-afc2bf3e7fb0
+A diagram titled "Blackboard Pattern" depicts a central black rounded rectangle labeled "Blackboard". Below it, there are three light blue rounded rectangles, arranged horizontally, labeled "Worker Agent #1", "Worker Agent #2", and "Worker Agent #3". Bidirectional arrows connect the "Blackboard" to each of the "Worker Agent" components, indicating communication between the blackboard and each worker agent.
+: diagram
+5bd78500-72dd-4d2f-8682-165599a1e103
+Traditional Approach:
+* Agents must explicitly query a database or communicate directly with other agents.
+* Coordination becomes a bottleneck, leading to **synchronization challenges**.
+00279d3b-e905-4f8e-b127-3b8651f703a4
+Event-Driven Approach:
+* The blackboard is implemented as a **streaming topic** in Kafka.
+* Agents **publish knowledge updates as events** instead of direct database writes.
+* Other agents **subscribe** to these updates dynamically, consuming only relevant information.
+7370ce12-774b-44b8-86ce-9d4476b16629
+© 2025 Confluent, Inc.
+1f888aa2-315d-417c-ae1b-81ae9514414c
+18
+
+6ef30bf5-832e-455d-8b19-f42d9dbd6486
+The event-driven version looks like this:
+A diagram titled "Data Streaming Platform" illustrates an event-driven blackboard pattern.
+At the center, a component labeled "Blackboard Topic" is depicted as a document with multiple horizontal lines, representing data entries.
+Three "Worker Agent" components are arranged to the right: "Worker Agent #1," "Worker Agent #2," and "Worker Agent #3."
+Arrows indicate interactions:
+- Arrows extend from the "Blackboard Topic" (from the horizontal data entries) to each "Worker Agent" (#1, #2, and #3), signifying that agents consume or read data from the blackboard.
+- Curved arrows originate from each "Worker Agent" (#1, #2, and #3) and point back to the "Blackboard Topic" (to the lower data entries), indicating that agents write or update the blackboard.
+: flowchart
+Event-Driven Blackboard Pattern
+304526f5-7638-4059-91de-9827b0e480be
+This approach allows real-time collaboration without agents needing to track each other's state explicitly. The blackboard acts as a **memory layer**, ensuring that shared context is always available without excessive network calls.
+5db4c9d5-cf21-4167-ab1e-847e52c1e284
+# Market-Based Pattern
+The **Market-Based Pattern** models a decentralized system where agents negotiate or compete for tasks and resources. This is commonly used in autonomous trading, logistics, and distributed optimization problems.
+65c3b89e-2ce7-434b-89b9-f29314bd9e3b
+flowchart
+Aggregator Agent is connected to Solver Agent #1, Solver Agent #2, and Solver Agent #3. Arrows point from Aggregator Agent to Solver Agent #1 and Solver Agent #3. Bidirectional arrows connect Aggregator Agent and Solver Agent #2. Bidirectional arrows also connect Solver Agent #1 and Solver Agent #2, and Solver Agent #2 and Solver Agent #3.
+Market-Based Pattern
+:diagram
+3c98d3c1-81ec-4528-8895-0c28f8da99b2
+© 2025 Confluent, Inc.
+c3e0bc23-9ba2-4775-9831-fcaf68451d60
+19
+
+ede02f2a-315b-475c-b9a8-1836e706dec8
+Traditional Approach:
+* Agents communicate directly with each other to place bids or negotiate terms.
+* A central system is often required to coordinate interactions.
+c55c4d9d-42bf-445e-afd8-8c0b4fd784b2
+Event-Driven Approach:
+* Bidding agents publish offers and requests as **events**.
+* A market-making service matches **events**, executing transactions asynchronously.
+* Agents listen for matched events and adjust their strategies dynamically.
+372cd571-7f2a-4daa-863d-9196acddfb6f
+The pattern now looks like this:
+6d4b195f-6869-4a6f-ad92-816baea825f7
+A flowchart titled "Data Streaming Platform" at the top and "Event-Driven Market-Based Pattern" at the bottom. It illustrates interactions between a "Market Maker", a data streaming platform with three topics (Bid Topic, Ask Topic, Transaction Topic), and three "Solver Agent" entities. 
+- The Market Maker sends data to the Bid Topic and receives data from the Transaction Topic.
+- Solver Agent #1 receives data from the Bid Topic and sends data to the Ask Topic.
+- Solver Agent #2 receives data from the Ask Topic and sends data to the Transaction Topic.
+- Solver Agent #3 receives data from the Ask Topic and sends data to the Transaction Topic.
+All three topics (Bid Topic, Ask Topic, Transaction Topic) are represented as message queues within a dashed rectangular boundary labeled "Data Streaming Platform". Each topic contains multiple horizontal lines, representing messages or entries.
+: flowchart
+00cd276d-5228-4181-b822-2995ac2bbc02
+This removes the quadratic complexity of direct peer-to-peer communication, as agents interact through a central event log instead of maintaining individual connections.
+9832e086-af74-4e78-b9b1-6331b5ddfff5
+For example, in financial markets, a data streaming platform is used as a real-time event broker, allowing thousands of trading agents to execute bids, match orders, and react to price fluctuations in milliseconds.
+c8818795-2d9b-4203-913b-56fc2b27c5a5
+© 2025 Confluent, Inc.
+131324c8-521e-4e10-827d-c2cb8ca28541
+20
+
+9f46ac10-8c0e-49f5-9801-d9c7fc5f1eb6
+EXAMPLE
+aa693944-fd01-46bd-a9be-bce214fd70d9
+Multi-Agent AI Sales Development Representative (SDR)
+Here's an event-driven, multi-agent system that automates the SDR workflow. Apache Flink® with AI Model Inference is used to orchestrate communication with a series of AI agents.
+82a1943f-38fb-4b83-ad62-4547e493da12
+Flowchart: System Architecture Diagram
+Lead Form
+-> Back End
+-> MongoDB
+-> Incoming Leads (inside Confluent Cloud)
+From Incoming Leads:
+-> Copy Lead into Agent Messages Topic
+-> Agent Messages (inside Confluent Cloud)
+From Agent Messages:
+-> Map Inbound Message to Agent
+-> Agent Predictions (inside Confluent Cloud)
+From Agent Predictions:
+-> Lead Ingestion Agent
+-> Lead Scoring Agent
+-> Active Outreach Agent
+-> Nurture Campaign Agent
+-> Send Email Agent
+External Model Inference:
+LLM (Large Language Model)
+-> Agent Messages
+-> Agent Predictions
+Additionally, Agent Messages are connected to:
+-> Lead Ingestion Agent
+-> Lead Scoring Agent
+-> Active Outreach Agent
+-> Nurture Campaign Agent
+-> Send Email Agent
+e81abc6d-a011-474e-ade3-a83e0f2d80f2
+The system consists of the following agents:
+*   **Lead Ingestion Agent**: Captures incoming leads from web forms, enriches them with external data (e.g., company website, Salesforce), and generates a report that can be used for scoring.
+*   **Lead Scoring Agent**: Uses enriched lead information to score leads and generate a short summary for how to best engage. Determines the appropriate next step and triggers downstream agents.
+*   **Active Outreach Agent**: Creates personalized outreach emails, incorporating insights from the lead's online presence, in order to book a meeting.
+*   **Nurture Campaign Agent**: Dynamically creates a sequence of emails based on where the lead originated, and what their interest was.
+*   **Send Email Agent**: Currently sends to a terminal, but in a real application would send via email relay or email service.
+48103e80-39f5-47d7-9507-9d60ca59065e
+→ Visit this GitHub repo to learn more.
+4804b2a8-c6d9-4ec4-97df-52a92a7ad731
+© 2025 Confluent, Inc.
+56c32356-7214-4afc-a9d4-cfbf6da6f3a8
+21
+
+2f058bea-b1aa-4d22-8871-3ceb52ea22e9
+# The Role of the Data Streaming Platform in Multi-Agent Systems
+For multi-agent systems to function efficiently, they must operate under a shared event-driven model that standardizes communication and decision-making. This model consists of three primary components:
+1.  **Input**: Agents consume structured events or commands.
+2.  **Processing**: Agents apply reasoning, use tools, or retrieve additional context.
+3.  **Output**: Agents produce new events or take actions in external systems.
+a06ed401-7b01-4799-a4b0-8d59f1b736a7
+By following this event-driven framework, multi-agent systems gain modularity, resilience, and the ability to scale dynamically.
+5e409a1b-c34e-4faa-a1f9-2a33ac798a23
+Maintaining state consistency across multiple agents requires event persistence and replayability. This is where immutable logs and event sourcing come into play.
+* Every **event is recorded as an immutable entry**, ensuring no data loss.
+* If an agent fails, it can **replay events from a saved offset**, restoring its state seamlessly.
+* Multiple agents can consume the same event stream, allowing **parallel processing** without interference.
+533d852e-1bbc-4a7a-a030-2163e188adf6
+This model dramatically improves reliability, making it easier to debug failures, scale workloads, and maintain real-time synchronization.
+d8035a0f-f880-4d40-824e-9f1de349d0d8
+As multi-agent architectures become more prevalent, event-driven patterns are essential to ensuring they remain scalable, adaptable, and efficient.
+b679f57f-850c-4995-9449-fdd4b956dbc5
+By applying the lessons from microservices architecture, AI agents can be designed to operate in a **loosely coupled, decentralized manner**, reacting to events rather than relying on rigid dependencies. This enables the creation of AI-driven ecosystems where agents collaborate seamlessly across complex workflows, unlocking new possibilities for enterprise automation and large-scale AI systems.
+5d097655-f743-4078-862a-69c260d0dff5
+In the next section, we'll explore how to build and deploy these event-driven agents in real-world applications, leveraging a data streaming platform with fully managed Kafka and Flink for scalable execution.
+0b063ca8-e1c8-42af-bbc2-748089f73942
+© 2025 Confluent, Inc.
+f779110a-40a5-44af-b8cc-3f41c80d54db
+22
+
+2bffbbb7-7950-4196-bd28-21bff3fbe3e6
+Part IV: Building Event-Driven Systems
+for Agents with a Data Streaming
+Platform
+cf651549-0976-431a-b5e9-11b622b04fff
+AI agents are only as effective as the infrastructure that supports them. No matter how sophisticated an agent's reasoning and decision-making capabilities are, they depend on access to the right data, tools, and communication channels. Traditional architectures—built around request/response patterns, rigid APIs, and batch data processing—create bottlenecks that limit an agent's ability to act in real time.
+f5dfa5d1-2d38-48ff-b8d7-4a5e4a9d6429
+EDAs solve this by treating data as a continuously moving asset, rather than a static snapshot. By using Confluent Data Streaming Platform as the backbone, agents can consume, process, and emit events asynchronously, making them adaptable, scalable, and resilient for enterprise use cases.
+dddf6ee3-a7c2-4e78-a1c8-1555818360c0
+In this section, we'll explore how to architect enterprise-ready event-driven AI systems, tackle the challenges of real-time agent interaction, and apply these concepts to real-world applications.
+4109e898-48bd-4661-b3c5-71041487c96f
+# Architecting Singular and Multi-Agent Systems
+The shift to event-driven architectures marks a pivotal moment in building scalable agent systems. Instead of waiting for direct instructions, agents are designed to emit and listen for events autonomously. Events act as signals that something has happened—a change in data, a triggered action, or an important update—allowing agents to respond dynamically and independently.
+fe6d7478-6727-46e8-9b2d-09e9b5fb8ee0
+flowchart
+: A diagram titled "Event-Driven Agents: Agents Emit and Listen for Events" depicts a three-stage event-driven architecture. On the left, a large rounded rectangle labeled "Agents Produce Events" contains nine smaller green rounded rectangles arranged in a 3x3 grid. Three arrows point from this container to a central rounded rectangle labeled "Event Broker". From the "Event Broker", three more arrows point to a large rounded rectangle on the right labeled "Event Consumers". This right container holds nine green rounded rectangles (3x3 grid), three yellow diamond shapes, and three blue cylinder shapes, all stacked vertically.
+Event-Driven Agents: Agents Emit and Listen for Events
+08c1eefe-5785-4c4b-815f-c1d88e89c7df
+At their core, Al agents function much like microservices, operating autonomously but needing structured communication to collaborate effectively. Confluent Data Streaming Platform acts as the "central nervous system" for agents, enabling them to function in a loosely coupled, but highly coordinated manner.
+180814ab-95c1-4b1d-b6a6-cdecaec83866
+© 2025 Confluent, Inc.
+fa053ff8-3ebb-454b-80aa-47dba3b1842c
+23
+
+b5fa55cc-8cd1-4f92-8d11-8cb1d208cdbd
+A diagram illustrating a data processing pipeline. On the left, a section labeled "Data Mess" shows numerous technology logos and names, including SQL Server, Oracle, TIBCO, JMS, elastic, IBM Z, splunk>, Amazon Cloudwatch, IOT, syslog, SAP ERP, ActiveMQ, RabbitMQ, and Cloud Storage, all feeding into a "CONNECT" component under the "AGENTS" heading. This "CONNECT" component feeds into a central "STREAM" component, which is a large circle with a star-like icon. Above the "STREAM" is a smaller circle labeled "PROCESS" with a refresh icon, and below it is a smaller circle labeled "GOVERN" with a magnifying glass icon. From the "STREAM", data flows to a section labeled "Data Products", which consists of several blue cube icons arranged hierarchically: Accounts at the top, then Customers, Purchases, and Shipments, followed by Orders, Claims, and Inventory at the bottom. These "Data Products" then feed into another "CONNECT" component on the right. Finally, this "CONNECT" component leads to a section labeled "Instant Value Everywhere", which includes two cloud icons: one labeled "Agents, Apps, and Microservices" and another labeled "Data Systems". A horizontal arrowed line at the bottom reinforces the flow: From Data Mess --- > To Data Products --- > To Instant Value Everywhere: diagram
+cb1f55ca-6741-4e12-b1d6-4d4a430aaef0
+# Stream
+Continuously capture and share real-time events with Al systems and agents anywhere, built on Kora, the cloud-native Apache Kafka® engine.
+63fff1b6-b7f0-4c44-bd8f-b537d3199fdc
+Connect
+Integrate disparate
+data from any
+environment, with
+120+ pre-built and
+custom connectors,
+bringing real-time
+data to agents.
+e7c38017-f3cb-49f0-8dc1-137bc2763d24
+Process
+Use Flink stream
+processing (e.g., join,
+filter) to enrich data
+with real-time context
+at query execution,
+enabling agentic RAG.
+2c5365b2-0a82-40ec-ba2f-edd633b929d4
+Govern
+Use data lineage,
+quality controls, and
+traceability to ensure
+data for agents is
+secure and verifiable.
+53bd0a0d-53f0-4e78-a055-2440a1536695
+_The Central Nervous System for Agentic Systems_
+e06963c5-cd08-4363-8884-770b6cbb6ef9
+By integrating Apache Kafka®, Apache Flink®, and an existing agent framework like LangGraph,
+we can build architectures that scale horizontally, process high-throughput data streams, and
+ensure real-time responsiveness.
+84820065-13a9-4c0c-bb32-b414aeab2b4e
+Here's what Confluent Data Streaming Platform provides:
+*   **Horizontal Scalability**: Agents operate independently, allowing for seamless scaling. Adding more agents doesn't require rewriting the entire system.
+*   **Low Latency and High Throughput**: Streaming platforms ensure that agents receive and act on fresh data without waiting for batch updates.
+*   **Fault Recovery and Isolation**: Failures in one part of the system don't bring down the entire workflow. Agents replay events from logs, ensuring resilience.
+*   **Shift Left**: Data is processed closer to the source, reducing latency and improving AI performance.
+7c794bd2-c754-4c88-8c75-da8ae352ad09
+A tightly integrated, event-driven pipeline ensures that agents not only receive fresh data, but also act on it dynamically, making real-time AI applications possible.
+3eff4c14-12a0-43d9-a594-1f7a2b2bd8e4
+© 2025 Confluent, Inc.
+6823e3da-15f3-4851-b4fa-65489ebf8385
+24
+
+779de1af-a155-4219-9c3b-5f9ad066fcee
+Challenges and Solutions in Event-Driven Agent Design
+While the benefits of an event-driven approach are clear, building AI-powered agentic systems comes with its own set of challenges. Below, we address key roadblocks and how Confluent Data Streaming Platform provides solutions.
+2956882f-fc76-40b4-9a63-002d6dddf476
+**Stream** Next-Level Data Streaming with a Fully Managed, Cloud-Native Service
+In an agent-driven system, failures, whether from network issues, hardware faults, or software crashes, are inevitable. The challenge is ensuring agents can recover seamlessly without disrupting workflows.
+0ad3eefb-ee28-46a5-b8bc-0258edbce714
+Solution:
+* Kafka's log-based architecture (on Kora) enables agents to replay events and recover from failures.
+* Idempotent processing ensures that retried operations don't result in duplicate actions.
+* Dead-letter queues handle failure scenarios gracefully, allowing human oversight when needed.
+e1e567dd-78d4-4100-b4c9-182a81352a32
+**Connect** Seamless Integration: Connecting Agents with Diverse Systems
+AI agents often interact with multiple external systems, such as databases, APIs, vector stores, and enterprise applications. These interactions require seamless, low-latency connectivity without introducing unnecessary dependencies.
+49afaeda-9cae-4197-a5ac-dd93b414a5b8
+Solution:
+* Use **connectors** to integrate disparate data sources and event streams. This allows agents to consume and produce events without hardcoded dependencies.
+* Leverage **LangGraph, Microsoft AutoGen, CrewAI** and similar frameworks for **tool integration**, enabling agents to call APIs, databases, and models dynamically.
+* Use data streaming through **Kafka topics** and **stream processing with Flink**, ensuring structured collaboration between different AI agents.
+48588d76-49fc-433c-9d53-38c0dde5d691
+Process Ensuring Data Freshness: Handling Dynamic Data Streams
+Agents require up-to-date, real-time data for optimal decision-making. Traditional architectures that rely on static data retrieval lead to outdated responses and inefficient workflows.
+6a388247-67e4-483b-9cb7-c09a8c79132c
+Solution:
+* **Flink SQL and Table API** to process incoming data streams, ensuring AI models and agents work with the latest context.
+* **Flink AI Model Inference** ensures model predictions update dynamically as new data flows in.
+* **Embedding pipelines** transform unstructured text into vector representations in real time, stored in vector databases such as [MongoDB](https://www.mongodb.com/), for rapid retrieval in RAG.
+5d0ff467-1a6a-4b55-aebd-72606ffc5a59
+**Govern** Data Quality, Security, and Compliance
+AI agents often interact with sensitive data, requiring strong governance, auditing, and compliance measures.
+Solution:
+*   **Stream Governance** ensures clean, structured data flows through the system, enforcing policies and data lineage tracking.
+*   **Encryption and access control** at the field level prevent unauthorized data exposure.
+*   **Fine-grained retention policies** ensure data is handled in compliance with regulatory requirements like GDPR.
+01279a20-c4aa-4d56-affc-d03e0041f7b5
+By addressing these challenges with an event-driven approach, we ensure that agents remain scalable,
+reliable, and capable of handling complex, multi-step workflows.
+6d6d964e-dbe5-467a-afdb-a458a7927412
+© 2025 Confluent, Inc.
+4ae2ecce-84dd-4b32-8311-19e36da76bff
+25
+
+fecc82a9-a888-4bc8-bf3c-198d7e456e7f
+EXAMPLE
+09a36875-d038-4ae0-95ad-3d5b12b7bf5c
+Agentic RAG
+Here's an event-driven research agent that mines source materials and leverages RAG to create a podcast interview brief.
+19e8daa1-0a30-4acc-a836-3f737dba2720
+Confluent Cloud: flowchart
+Flowchart showing a data processing pipeline within Confluent Cloud, interacting with a MongoDB database, Front End, Back End, and two agents.: flowchart
+**Start of Flow:**
+1.  **Front End** box
+    *   Arrow points to **Back End** box
+2.  **Back End** box
+    *   Arrow points to **MongoDB** (database icon)
+**MongoDB Interactions:**
+*   **MongoDB** (database icon) has an arrow pointing to **Text Embeddings** (queue icon) labeled **Source**.
+*   **MongoDB** (database icon) has an arrow pointing to **Full Text from Sources** (queue icon) labeled **Source**.
+*   **MongoDB** (database icon) has an arrow pointing to **Extract Questions** (process box) labeled **Sink**.
+*   **MongoDB** (database icon) has an arrow pointing to **De-dupe** (process box) labeled **Sink**.
+*   **MongoDB** (database icon) has an arrow pointing to **Generate Research Brief Agent** (process box).
+**Confluent Cloud (shaded blue area):**
+1.  **Research Requests** (queue icon)
+    *   Arrow points to **MongoDB** (database icon) labeled **Sink**.
+    *   Arrow points to **Process URLs & Create Embeddings Agent** (process box) labeled **Sink**.
+2.  **Text Embeddings** (queue icon)
+    *   Arrow points to **Process URLs & Create Embeddings Agent** (process box) labeled **Producer**.
+3.  **Full Text from Sources** (queue icon)
+    *   Arrow points to **Process URLs & Create Embeddings Agent** (process box) labeled **Producer**.
+4.  **Process URLs & Create Embeddings Agent** (process box)
+    *   Arrow points to **Full Text from Sources** (queue icon).
+    *   Arrow points to **Text Embeddings** (queue icon).
+5.  **Extract Questions** (process box)
+    *   Arrow points to **Mined Questions** (queue icon).
+6.  **Mined Questions** (queue icon)
+    *   Arrow points to **De-dupe** (process box).
+7.  **De-dupe** (process box)
+    *   Arrow points to **Completed Requests** (queue icon).
+8.  **Completed Requests** (queue icon)
+    *   Arrow points to **MongoDB** (database icon) labeled **Sink**.
+    *   Arrow points to **Generate Research Brief Agent** (process box) labeled **Sink**.
+**End of Flow:**
+*   **Generate Research Brief Agent** (process box)
+    *   Receives input from **MongoDB** (database icon).
+    *   Receives input from **Completed Requests** (queue icon) labeled **Sink**.
+99154dfe-de89-456d-b65d-f4c8522e1b3d
+The workflow:
+1. Stream unstructured data (e.g., website URLs, blogs, podcasts) into Confluent, retrieve the text, chunk it, generate embeddings using Flink, and store them in a vector database like MongoDB Atlas using a sink connector.
+2. For all text extracted, pull out the most interesting questions, and store those.
+3. Call the LLM to generate a research brief combining the most relevant context based on the embeddings.
+9f821dfa-8b6f-4246-a1d7-ef303d531370
+→ Visit this GitHub repo and blog to learn more.
+a3701642-8ff9-42c4-b44f-808ebfaf824a
+© 2025 Confluent, Inc.
+6227ec0d-7ae4-47ac-8c26-53ea1a7a1136
+26
+
+891ca3f4-4dc8-4355-a8ec-d5670898b0ea
+## Real-World Applications of Event-Driven Agentic Systems
+Event-driven architectures unlock powerful Al applications across industries by ensuring agents operate with fresh, real-time data. Below are a few examples of how companies are using a data streaming platform to build event-driven multi-agent systems.
+206f5bf5-1cf0-4465-995d-ea3417bc100f
+## 1. Automating Web Scraping with AI Agents
+Traditional web scraping is brittle, requiring manual efforts to handle dynamic pages, extract relevant data, and adapt to site changes. This complexity increases when supporting GenAI models, which need structured and unstructured data in real time. Static scraping workflows fail to keep up, leading to outdated or incomplete information.
+Reworkd tackled this problem by building an agentic system for web scraping. AI agents write code to extract relevant data, while test and validation agents verify that the generated code is correct. These agents operate asynchronously, consuming and producing events in a continuous feedback loop.
+The agents seamlessly process and stream real-time data into downstream applications. The result: a scalable, fault-tolerant system that dynamically adjusts to website changes, and ensures high-quality data feeds for AI models.
+2e817c27-d405-43df-ac90-b096b97fb2e9
+## 2. Intelligent Business Copilots
+Teams need self-serve, real-time access to data for faster, smarter decision-making. Yet, business stakeholders often rely on engineering and data science teams to integrate and query data, introducing bottlenecks, batch-based delays, and stale insights.
+930e1424-e1f8-47ad-aa3f-02587d68a0f4
+Airy transforms this process by enabling Al-powered copilots that provide a natural language interface for exploring and working with real-time data. Agents convert plain language into Flink jobs, continuously monitoring and processing data streams.
+2d1d0d81-5165-45d2-9d21-a9f017d2e612
+By leveraging real-time context from a data streaming platform, these agents use LLMs to generate precise Flink SQL queries, empowering teams to extract and analyze live data instantly. This shifts data interaction from manual queries to conversational, real-time insights, making knowledge more accessible than ever.
+f9dbac55-01ec-4a15-a110-5c3d411daaa4
+3. Workflow Automation with a Drag-and-Drop Agent Builder
+When starting to build multi-agent systems, teams face the complexity of integrating and orchestrating AI agents and tools, as well as managing intricate tasks at scale.
+2c8b1259-3755-457d-a064-caf9b56ff924
+Agent Taskflow provides a no-code platform that helps users get up and running with all the features that go into an agent-memory, knowledge bases, and tools—in just a few clicks. The drag-and-drop UI allows for effortless creation of workflows.
+7b904b90-4b60-486e-9cf7-ab26f92c3692
+Built on a data streaming platform, the solution enables agents to make context-informed decisions and adapt to real-time events, for more efficient and intelligent automation. From automating customer support to marketing campaigns, this frees teams to focus on high-value work while democratizing AI agents, making it accessible to users without programming expertise.
+b4d37296-b714-4797-b4ac-4346bf324cde
+© 2025 Confluent, Inc.
+46bc245f-bbb2-4d46-bad3-6b1194dbe343
+27
+
+d40e9b47-8ea8-4658-8f6a-ebb9a5f339e1
+# Broader Industry Impact
+Event-driven AI agents enable businesses to automate complex, real-time tasks across industries:
+*   **E-commerce**: Agents continuously track price changes, product availability, and competitor trends, ensuring businesses make informed pricing decisions.
+*   **Market Research**: Streaming data feeds allow companies to monitor customer sentiment, competitive shifts, and industry trends in real time.
+*   **Finance**: Agents aggregate financial data, news sentiment, and stock movements, helping analysts make more accurate, timely decisions.
+623aeaf2-578c-46e0-bf9a-f9faa16875b0
+By adopting event-driven multi-agent systems, businesses gain resilient, adaptive Al workflows that evolve dynamically. As this paradigm becomes standard, companies that integrate streaming-first architectures will gain a competitive edge in automating complex, data-intensive processes.
+e4a314a8-7cde-419b-96c8-1d672131b1c2
+Why a Data Streaming Platform is Essential for AI Agents
+At the heart of every scalable agentic system is a real-time data streaming platform. Unlike traditional request/response architectures that introduce bottlenecks and stale data, streaming enables continuous, low-latency access to the information agents need.
+158c4bbe-ae87-428b-bf4b-5e9c42f8ab44
+Why streaming matters:
+*   **Real-Time Access:** Eliminates batch delays and ensures agents make decisions based on the latest available data.
+*   **Decoupled Architecture:** Agents interact through event streams rather than direct calls, reducing complexity and interdependencies.
+*   **AI-Ready Data:** Streaming platforms transform unstructured data into embeddings stored in vector stores like MongoDB, making it AI-friendly.
+*   **Scalable AI Interactions:** AI workloads are distributed across streaming pipelines, preventing bottlenecks and improving efficiency.
+*   **Modular and Future-Proof:** Use any model, vector database, or AI framework of choice, with the flexibility to swap in new technologies as they evolve, ensuring long-term adaptability.
+53643dae-7171-41b1-a6cd-4c3017fa2c5f
+By adopting a shift-left approach—moving computation closer to the data source—organizations can reduce latency, improve AI performance, and create a more adaptive architecture.
+9469d0c6-49a8-4035-8bca-7dd714c28477
+# The Future of AI is Event-Driven
+AI-powered agents will define the next era of automation, but only if they can think, act, and collaborate in real time. Event-driven architectures ensure that agents are no longer limited by outdated batch processes, rigid APIs, or stale data. Instead, they operate dynamically—processing, analyzing, and acting on real-time events as they happen.
+f54f0cf3-33ef-49be-a2bf-6e74d4bdfc45
+As AI adoption accelerates, companies that embrace streaming-first architectures will have a massive advantage. They'll build AI systems that are smarter, more adaptable, and infinitely scalable, unlocking true agentic intelligence across industries.
+f725a8f3-e81d-4693-a4d5-2c52c63030b5
+© 2025 Confluent, Inc.
+4368f98c-0023-42db-840c-36794fddaa52
+28
+
+4f5a1cea-72e4-4494-b122-f61b362ce31a
+Take the
+Next Step
+To get started with
+building event-driven
+multi-agents:
+6c01be5e-bd29-4518-958e-427cd36f93bf
+1. Sign up for Confluent Cloud and receive $400 in free credits.
+5fb46b5e-c172-4ff7-b496-3b39b8a69db4
+2 Visit the [GenAI hub](null) for more resources.
+3d003610-9bb0-4f67-b253-3ede70f5ddad
+3. Apply for Confluent's AI Accelerator Program, which provides technical and business mentorship to help AI startups fast-track innovation and growth.
+4b42bd7e-3557-4440-9d55-03e83ba654ac
+# About Confluent
+Confluent is pioneering a fundamentally new category of data infrastructure focused on data in motion. Confluent's cloud-native offering is the foundational platform for data in motion-designed to be the intelligent connective tissue enabling real-time data from multiple sources to constantly stream across the organization. With Confluent, organizations can meet the new business imperative of delivering rich digital front-end customer experiences and transitioning to sophisticated, real-time, software-driven back-end operations.
+To learn more, please visit [www.confluent.io](www.confluent.io).
+465c0073-522b-4876-bd25-b15bf833d31d
+© Confluent Inc. 2025
+aae128f4-c9d1-4819-9eac-0abc042b87b6
+29

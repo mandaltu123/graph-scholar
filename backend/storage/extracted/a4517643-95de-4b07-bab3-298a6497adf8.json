@@ -1,0 +1,204 @@
+{
+  "pages": [
+    {
+      "page_num": 1,
+      "text": "f2a71fee-78aa-46fd-99da-db3dd07924cb\nIndiGo Boarding Pass (Web Check-In)\nYour Departure Terminal is T\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\nscan_code\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\nGate is subject to change and will close 25 minutes prior to departure\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\nscan_code\nSeat: 14A\nSeq: 086\naf34aca7-8e27-472d-a4e1-4d52430bd1e4\nlogo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.\n8f39a8a1-55b5-45c5-a930-3741189e4292\n3\n'EARS\nF WIND\nSUZLON\nPOWERING A GREENER TOMORROW\n30 years\nof pioneering an industry\nThis figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure\nIndia's no. 1\nwind energy solutions provider\n1,900+\ncustomers\n21+ GW\ndelivered\nIndia's largest\nmanufacturing capacity *\n1.5 million\ncumulative jobs\nMade in India,\nfor the world\nIndia's most trusted winds\nScan here to view\nour 30-year journey\n*Annual wind energy manufacturing capacity of 4,500 MW\nb08859f0-0cef-41f5-9e09-43c1a386e5eb\nscan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.",
+      "blocks": [
+        {
+          "markdown": "<a id='f2a71fee-78aa-46fd-99da-db3dd07924cb'></a>\n\nIndiGo Boarding Pass (Web Check-In)\n\nYour Departure Terminal is T\n\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\n\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\n\n<::scan_code::>\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\n\nGate is subject to change and will close 25 minutes prior to departure\n\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\n<::scan_code::>\nSeat: 14A\nSeq: 086",
+          "type": "text",
+          "id": "f2a71fee-78aa-46fd-99da-db3dd07924cb",
+          "grounding": {
+            "box": {
+              "left": 0.025447487831115723,
+              "top": 0.024973630905151367,
+              "right": 0.9788295030593872,
+              "bottom": 0.31237390637397766
+            },
+            "page": 0
+          }
+        },
+        {
+          "markdown": "<a id='af34aca7-8e27-472d-a4e1-4d52430bd1e4'></a>\n\n<::logo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.::>",
+          "type": "logo",
+          "id": "af34aca7-8e27-472d-a4e1-4d52430bd1e4",
+          "grounding": {
+            "box": {
+              "left": 0.04148634523153305,
+              "top": 0.360187292098999,
+              "right": 0.11581837385892868,
+              "bottom": 0.415404736995697
+            },
+            "page": 0
+          }
+        },
+        {
+          "markdown": "<a id='8f39a8a1-55b5-45c5-a930-3741189e4292'></a>\n\n3\n'EARS\nF WIND\n\nSUZLON\nPOWERING A GREENER TOMORROW\n\n30 years\nof pioneering an industry\n\n<::This figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure::>\n\nIndia's no. 1\nwind energy solutions provider\n\n1,900+\ncustomers\n\n21+ GW\ndelivered\n\nIndia's largest\nmanufacturing capacity *\n\n1.5 million\ncumulative jobs\n\nMade in India,\nfor the world\n\nIndia's most trusted winds\n\nScan here to view\nour 30-year journey\n\n*Annual wind energy manufacturing capacity of 4,500 MW",
+          "type": "figure",
+          "id": "8f39a8a1-55b5-45c5-a930-3741189e4292",
+          "grounding": {
+            "box": {
+              "left": 0.05826494097709656,
+              "top": 0.3561866283416748,
+              "right": 0.9586853981018066,
+              "bottom": 0.6166645884513855
+            },
+            "page": 0
+          }
+        },
+        {
+          "markdown": "<a id='b08859f0-0cef-41f5-9e09-43c1a386e5eb'></a>\n\n<::scan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.::>",
+          "type": "scan_code",
+          "id": "b08859f0-0cef-41f5-9e09-43c1a386e5eb",
+          "grounding": {
+            "box": {
+              "left": 0.8665592074394226,
+              "top": 0.5301290154457092,
+              "right": 0.9559751152992249,
+              "bottom": 0.6066089272499084
+            },
+            "page": 0
+          }
+        }
+      ]
+    }
+  ],
+  "full_text": "f2a71fee-78aa-46fd-99da-db3dd07924cb\nIndiGo Boarding Pass (Web Check-In)\nYour Departure Terminal is T\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\nscan_code\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\nGate is subject to change and will close 25 minutes prior to departure\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\nscan_code\nSeat: 14A\nSeq: 086\naf34aca7-8e27-472d-a4e1-4d52430bd1e4\nlogo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.\n8f39a8a1-55b5-45c5-a930-3741189e4292\n3\n'EARS\nF WIND\nSUZLON\nPOWERING A GREENER TOMORROW\n30 years\nof pioneering an industry\nThis figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure\nIndia's no. 1\nwind energy solutions provider\n1,900+\ncustomers\n21+ GW\ndelivered\nIndia's largest\nmanufacturing capacity *\n1.5 million\ncumulative jobs\nMade in India,\nfor the world\nIndia's most trusted winds\nScan here to view\nour 30-year journey\n*Annual wind energy manufacturing capacity of 4,500 MW\nb08859f0-0cef-41f5-9e09-43c1a386e5eb\nscan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.",
+  "raw": {
+    "markdown": "<a id='f2a71fee-78aa-46fd-99da-db3dd07924cb'></a>\n\nIndiGo Boarding Pass (Web Check-In)\n\nYour Departure Terminal is T\n\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\n\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\n\n<::scan_code::>\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\n\nGate is subject to change and will close 25 minutes prior to departure\n\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\n<::scan_code::>\nSeat: 14A\nSeq: 086\n\n<a id='af34aca7-8e27-472d-a4e1-4d52430bd1e4'></a>\n\n<::logo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.::>\n\n<a id='8f39a8a1-55b5-45c5-a930-3741189e4292'></a>\n\n3\n'EARS\nF WIND\n\nSUZLON\nPOWERING A GREENER TOMORROW\n\n30 years\nof pioneering an industry\n\n<::This figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure::>\n\nIndia's no. 1\nwind energy solutions provider\n\n1,900+\ncustomers\n\n21+ GW\ndelivered\n\nIndia's largest\nmanufacturing capacity *\n\n1.5 million\ncumulative jobs\n\nMade in India,\nfor the world\n\nIndia's most trusted winds\n\nScan here to view\nour 30-year journey\n\n*Annual wind energy manufacturing capacity of 4,500 MW\n\n<a id='b08859f0-0cef-41f5-9e09-43c1a386e5eb'></a>\n\n<::scan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.::>",
+    "chunks": [
+      {
+        "markdown": "<a id='f2a71fee-78aa-46fd-99da-db3dd07924cb'></a>\n\nIndiGo Boarding Pass (Web Check-In)\n\nYour Departure Terminal is T\n\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\n\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\n\n<::scan_code::>\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\n\nGate is subject to change and will close 25 minutes prior to departure\n\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\n<::scan_code::>\nSeat: 14A\nSeq: 086",
+        "type": "text",
+        "id": "f2a71fee-78aa-46fd-99da-db3dd07924cb",
+        "grounding": {
+          "box": {
+            "left": 0.025447487831115723,
+            "top": 0.024973630905151367,
+            "right": 0.9788295030593872,
+            "bottom": 0.31237390637397766
+          },
+          "page": 0
+        }
+      },
+      {
+        "markdown": "<a id='af34aca7-8e27-472d-a4e1-4d52430bd1e4'></a>\n\n<::logo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.::>",
+        "type": "logo",
+        "id": "af34aca7-8e27-472d-a4e1-4d52430bd1e4",
+        "grounding": {
+          "box": {
+            "left": 0.04148634523153305,
+            "top": 0.360187292098999,
+            "right": 0.11581837385892868,
+            "bottom": 0.415404736995697
+          },
+          "page": 0
+        }
+      },
+      {
+        "markdown": "<a id='8f39a8a1-55b5-45c5-a930-3741189e4292'></a>\n\n3\n'EARS\nF WIND\n\nSUZLON\nPOWERING A GREENER TOMORROW\n\n30 years\nof pioneering an industry\n\n<::This figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure::>\n\nIndia's no. 1\nwind energy solutions provider\n\n1,900+\ncustomers\n\n21+ GW\ndelivered\n\nIndia's largest\nmanufacturing capacity *\n\n1.5 million\ncumulative jobs\n\nMade in India,\nfor the world\n\nIndia's most trusted winds\n\nScan here to view\nour 30-year journey\n\n*Annual wind energy manufacturing capacity of 4,500 MW",
+        "type": "figure",
+        "id": "8f39a8a1-55b5-45c5-a930-3741189e4292",
+        "grounding": {
+          "box": {
+            "left": 0.05826494097709656,
+            "top": 0.3561866283416748,
+            "right": 0.9586853981018066,
+            "bottom": 0.6166645884513855
+          },
+          "page": 0
+        }
+      },
+      {
+        "markdown": "<a id='b08859f0-0cef-41f5-9e09-43c1a386e5eb'></a>\n\n<::scan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.::>",
+        "type": "scan_code",
+        "id": "b08859f0-0cef-41f5-9e09-43c1a386e5eb",
+        "grounding": {
+          "box": {
+            "left": 0.8665592074394226,
+            "top": 0.5301290154457092,
+            "right": 0.9559751152992249,
+            "bottom": 0.6066089272499084
+          },
+          "page": 0
+        }
+      }
+    ],
+    "splits": [
+      {
+        "class": "full",
+        "identifier": "full",
+        "pages": [
+          0
+        ],
+        "markdown": "<a id='f2a71fee-78aa-46fd-99da-db3dd07924cb'></a>\n\nIndiGo Boarding Pass (Web Check-In)\n\nYour Departure Terminal is T\n\nSWARGIARY/CHAKUL MR\nGUWAHATI TO BENGALURU (T1)\n\nFlight: 6E 6542\nGate: 7\nBoarding Time: 0835 Hrs\nBoarding: Zone 3\nSeat: 14A\n\n<::scan_code::>\nDate: 17 Feb 2026\nSeq: 086\nDeparture: 09:20\nServices: -\n\nGate is subject to change and will close 25 minutes prior to departure\n\nSWARGIARY/CHAKUL MR\nGAU -> BLR (T1)\nFlight: 6E 6542\nDate: 17 Feb 2026\nPNR: X9REMW\nServices: -\n<::scan_code::>\nSeat: 14A\nSeq: 086\n\n<a id='af34aca7-8e27-472d-a4e1-4d52430bd1e4'></a>\n\n<::logo: [Unknown] 30 YEARS OF WIND. The number \"30\" is prominent, with the \"0\" stylized as a leafy emblem in green, blue, and yellow.::>\n\n<a id='8f39a8a1-55b5-45c5-a930-3741189e4292'></a>\n\n3\n'EARS\nF WIND\n\nSUZLON\nPOWERING A GREENER TOMORROW\n\n30 years\nof pioneering an industry\n\n<::This figure depicts a person in a hard hat looking upwards, with a composite image of wind turbines and industrial machinery. There is a section titled \"THE WIND MAN SHRI TULSI TANTI 1958-2022--\" overlaid. A QR code is present in the bottom right corner with text below it.\n: figure::>\n\nIndia's no. 1\nwind energy solutions provider\n\n1,900+\ncustomers\n\n21+ GW\ndelivered\n\nIndia's largest\nmanufacturing capacity *\n\n1.5 million\ncumulative jobs\n\nMade in India,\nfor the world\n\nIndia's most trusted winds\n\nScan here to view\nour 30-year journey\n\n*Annual wind energy manufacturing capacity of 4,500 MW\n\n<a id='b08859f0-0cef-41f5-9e09-43c1a386e5eb'></a>\n\n<::scan_code: QR code\nScan here to view our 30-year journey\nThis is a clear, high-contrast QR code with text below it.::>",
+        "chunks": [
+          "f2a71fee-78aa-46fd-99da-db3dd07924cb",
+          "af34aca7-8e27-472d-a4e1-4d52430bd1e4",
+          "8f39a8a1-55b5-45c5-a930-3741189e4292",
+          "b08859f0-0cef-41f5-9e09-43c1a386e5eb"
+        ]
+      }
+    ],
+    "grounding": {
+      "f2a71fee-78aa-46fd-99da-db3dd07924cb": {
+        "box": {
+          "left": 0.025447487831115723,
+          "top": 0.024973630905151367,
+          "right": 0.9788295030593872,
+          "bottom": 0.31237390637397766
+        },
+        "page": 0,
+        "type": "chunkText",
+        "confidence": 0.955,
+        "low_confidence_spans": []
+      },
+      "af34aca7-8e27-472d-a4e1-4d52430bd1e4": {
+        "box": {
+          "left": 0.04148634523153305,
+          "top": 0.360187292098999,
+          "right": 0.11581837385892868,
+          "bottom": 0.415404736995697
+        },
+        "page": 0,
+        "type": "chunkLogo",
+        "confidence": null,
+        "low_confidence_spans": []
+      },
+      "8f39a8a1-55b5-45c5-a930-3741189e4292": {
+        "box": {
+          "left": 0.05826494097709656,
+          "top": 0.3561866283416748,
+          "right": 0.9586853981018066,
+          "bottom": 0.6166645884513855
+        },
+        "page": 0,
+        "type": "chunkFigure",
+        "confidence": null,
+        "low_confidence_spans": []
+      },
+      "b08859f0-0cef-41f5-9e09-43c1a386e5eb": {
+        "box": {
+          "left": 0.8665592074394226,
+          "top": 0.5301290154457092,
+          "right": 0.9559751152992249,
+          "bottom": 0.6066089272499084
+        },
+        "page": 0,
+        "type": "chunkScanCode",
+        "confidence": null,
+        "low_confidence_spans": []
+      }
+    },
+    "metadata": {
+      "filename": "a4517643-95de-4b07-bab3-298a6497adf8.pdf",
+      "org_id": null,
+      "page_count": 1,
+      "duration_ms": 17445,
+      "credit_usage": 3.0,
+      "job_id": "3a85fefe35474bf0a186d31f6e7208a9",
+      "version": "dpt-2-20251103",
+      "failed_pages": []
+    }
+  }
+}
