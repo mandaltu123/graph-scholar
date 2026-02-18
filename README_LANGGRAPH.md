@@ -6,6 +6,10 @@ This document explains how the LangGraph workflow in this project operates, the 
 
 The application uses a LangGraph state machine to orchestrate a controlled Retrieval-Augmented Generation (RAG) flow. It takes a user question, retrieves relevant chunks from a vector store, generates a grounded answer with citations, verifies that answer, and optionally retries with stricter constraints if verification fails.
 
+## LangGraph Framework Used
+
+This project uses the **LangGraph (Python)** framework from the `langgraph` package. The workflow is implemented with a `StateGraph` that defines nodes, edges, and conditional transitions.
+
 ## High-Level Flow
 
 ```
@@ -89,24 +93,44 @@ LangGraph is used because:
 ## Interview Questions
 
 ### Conceptual
-1) Why is a state machine useful for RAG workflows?
-2) What are the trade-offs of LLM-based verification vs. heuristic verification?
-3) How does chunk size affect retrieval quality and latency?
+1) Why is a state machine useful for RAG workflows?  
+**Answer:** It makes control flow explicit and testable (retrieve → generate → verify → retry). You can branch on verification outcomes and keep state across steps, which is harder to express in a linear chain.
+
+2) What are the trade-offs of LLM-based verification vs. heuristic verification?  
+**Answer:** LLM verification is flexible and can reason about nuanced grounding, but it adds latency/cost and can be inconsistent. Heuristics are fast and deterministic but can be overly strict or miss subtle unsupported claims. Combining both gives balance.
+
+3) How does chunk size affect retrieval quality and latency?  
+**Answer:** Larger chunks improve context continuity but reduce retrieval precision and increase prompt size/latency. Smaller chunks improve recall/precision but can lose context, requiring more chunks and potentially more tokens.
 
 ### System Design
-1) How would you handle long documents without exceeding context limits?
-2) How would you add async ingestion and progress updates?
-3) How would you support multi-document retrieval?
+1) How would you handle long documents without exceeding context limits?  
+**Answer:** Use smaller chunks with overlap, retrieve top‑k, and add a re-ranking stage. Summarize sections or use hierarchical retrieval (section → chunk). Apply context window truncation and prioritize by relevance score.
+
+2) How would you add async ingestion and progress updates?  
+**Answer:** Move OCR + embedding to a background task queue (Celery, RQ, or FastAPI background worker). Store ingestion status in a DB and expose polling or WebSocket/SSE progress updates to the UI.
+
+3) How would you support multi-document retrieval?  
+**Answer:** Store all chunks in a single collection with `doc_id` metadata and query with filters or re-rank across documents. Update prompts to list sources with doc IDs and return grouped citations.
 
 ### Debugging
-1) What steps would you take if retrieval returns no chunks?
-2) How would you validate that OCR output is correct?
-3) How would you detect and prevent hallucinations?
+1) What steps would you take if retrieval returns no chunks?  
+**Answer:** Verify doc_id matches indexed data, confirm OCR output exists, check embedding model load, and ensure Chroma persisted data. Query the vector store directly to inspect documents.
+
+2) How would you validate that OCR output is correct?  
+**Answer:** Persist raw OCR responses, inspect extracted text files, and validate page counts/sections. Compare sampled OCR text with the original PDF.
+
+3) How would you detect and prevent hallucinations?  
+**Answer:** Enforce citations per sentence, run a verifier step, and fall back to “not in context” when grounding fails. Add heuristic checks for citation IDs.
 
 ### Practical Coding
-1) How would you implement a more robust citation validator?
-2) How would you extend the graph with a summarization node?
-3) How would you cache embeddings to speed ingestion?
+1) How would you implement a more robust citation validator?  
+**Answer:** Parse citations with regex, verify each cited ID exists in retrieved chunks, and ensure every sentence includes at least one citation. Reject or rewrite answers that fail.
+
+2) How would you extend the graph with a summarization node?  
+**Answer:** Add a `summarize` node after retrieval that compresses top‑k chunks, then feed the summary into `generate`. Keep the original chunks for citations.
+
+3) How would you cache embeddings to speed ingestion?  
+**Answer:** Hash chunk text and store embeddings in a cache (disk or DB). On re‑ingestion, reuse cached vectors if the hash matches to avoid recomputation.
 
 ## Quick Diagram of Data Flow
 
