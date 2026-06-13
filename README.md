@@ -1,5 +1,12 @@
 # GraphScholar RAG
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-StateGraph-1C3C3C?logo=langchain&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-green?logo=fastapi&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Store-orange)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-412991?logo=openai&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 **Upload research papers (PDF) and chat with them using a LangGraph-powered RAG pipeline.** Supports multi-turn conversation with session memory, answer verification, and OCR for scanned documents.
 
 ## What It Does
@@ -90,3 +97,7 @@ GraphScholar-RAG/
 │   └── requirements.txt
 └── README.md
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE)
