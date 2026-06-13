@@ -1,55 +1,92 @@
-## ScholarGraph-RAG
+# GraphScholar RAG
 
-ScholarGraph-RAG is a local-first, LangGraph-powered agentic research paper chatbot. It ingests PDFs with LandingAI OCR, chunks and embeds content into ChromaDB, and answers questions with grounded citations using a local Llama server.
+**Upload research papers (PDF) and chat with them using a LangGraph-powered RAG pipeline.** Supports multi-turn conversation with session memory, answer verification, and OCR for scanned documents.
 
-### Architecture (ASCII)
+## What It Does
+
+- Upload PDF research papers via REST API
+- Chunks text using configurable strategies (semantic/fixed-size)
+- Embeds and stores chunks in ChromaDB
+- Handles queries via a LangGraph state graph: retrieve → classify → generate → verify
+- Verifies answers against retrieved chunks with heuristic grounding
+- Suggests related questions after each answer
+- Session-aware chat history for multi-turn conversations
+- OCR support for scanned PDFs via LandingAI
+
+## RAG Graph Flow
 
 ```
-PDF Upload -> LandingAI OCR -> Chunking -> Embeddings -> ChromaDB
-                                      \-> LangGraph (classify -> retrieve -> generate -> verify -> refine)
-Client Chat UI <---------------------------------------------- Answer + Sources + Related Qs
+User question
+      │
+      ▼
+ Classify (needs retrieval?)
+      │
+   ┌──┴──┐
+   yes   no (use history)
+   │
+   ▼
+ChromaDB retrieval (top-k chunks)
+      │
+      ▼
+ Generate answer (OpenAI GPT)
+      │
+      ▼
+ Verify + ground check
+      │
+   ┌──┴──┐
+ pass  fail (retry, max 2)
+   │
+   ▼
+ Related questions → Final response
 ```
 
-### Backend Setup
+## Quick Start
 
-```
-cd backend
-python -m venv .venv && source .venv/bin/activate
+```bash
+cd GraphScholar-RAG/backend
 pip install -r requirements.txt
 cp .env.example .env
-uvicorn app.main:app --reload --port 8002
+
+uvicorn app.main:app --reload
+# API docs at http://localhost:8000/docs
 ```
 
-### Frontend Setup
+## API Endpoints
+
+| Method | Path | Description |
+|---|---|---|
+| POST | `/upload` | Upload a PDF for ingestion |
+| POST | `/chat` | Ask a question about an ingested document |
+| GET | `/docs` | List all ingested documents |
+| GET | `/health` | Health check |
+
+## Tech Stack
+
+- **Orchestration**: LangGraph (StateGraph with conditional edges)
+- **Embedding**: OpenAI `text-embedding-3-small`
+- **Generation**: OpenAI GPT-4o-mini
+- **Vector Store**: ChromaDB
+- **OCR**: LandingAI (for scanned PDFs)
+- **API**: FastAPI + Uvicorn
+
+## Project Structure
 
 ```
-cd frontend
-npm install
-npm run dev
+GraphScholar-RAG/
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── api/           # Routes: upload, chat, docs, health
+│   │   ├── services/
+│   │   │   ├── rag_graph.py    # LangGraph RAG pipeline
+│   │   │   ├── vectorstore.py  # ChromaDB operations
+│   │   │   ├── embeddings.py   # OpenAI embeddings
+│   │   │   ├── chunking.py     # Text chunking strategies
+│   │   │   ├── ingest.py       # PDF ingestion pipeline
+│   │   │   ├── verifier.py     # Answer grounding check
+│   │   │   └── ocr_landingai.py # OCR for scanned PDFs
+│   │   └── core/config.py
+│   ├── tests/
+│   └── requirements.txt
+└── README.md
 ```
-
-### Environment Variables
-
-- `LANDINGAI_API_KEY` / `LANDINGAI_ENDPOINT` / `LANDINGAI_MOCK`
-- `LLAMA_BASE_URL` / `LLAMA_MODEL`
-- `CHROMA_PERSIST_DIR`, `UPLOADS_DIR`, `EXTRACTED_DIR`
-
-### Local Llama Options
-
-- **Ollama (OpenAI-compatible endpoint)**  
-  Start Ollama and use: `LLAMA_BASE_URL=http://localhost:11434/v1` and `LLAMA_MODEL=llama3.1`
-
-- **llama.cpp server**  
-  Run llama.cpp with the OpenAI-compatible server and set `LLAMA_BASE_URL=http://localhost:8001/v1`
-
-### Usage
-
-1. Upload a PDF from the UI.
-2. Wait for indexing to complete.
-3. Ask questions and review sources + related questions.
-
-### Troubleshooting
-
-- **OCR errors**: ensure LandingAI key and endpoint are correct, or set `LANDINGAI_MOCK=true`.
-- **Llama endpoint errors**: verify local server is running and reachable at `LLAMA_BASE_URL`.
-- **Chroma persistence**: ensure `storage/chroma` is writable.
